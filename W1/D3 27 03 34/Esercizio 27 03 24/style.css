@@ -1,0 +1,63 @@
+/*body*/
+
+body {margin: 20px 0;}
+
+/*head*/
+
+#testata {  width: 100%;
+            text-align: center;
+}
+#testata img {  margin: 0 auto;
+                width: 200px;
+             }
+#testata p { text-align: center;
+             margin: 0;
+             border: 0;
+             padding: 20px;
+             background-color: #fdfbf1;
+             border-top: 1px solid #ffd877;
+        }
+#testata p strong {text-transform: uppercase;}
+
+/* main*/
+
+#container {  width: 35%;
+            text-align: center;
+            margin: 0 auto;
+}
+
+#ricetta p { text-align: justify;}
+
+#ricetta iframe {  width: 650;
+                   height: 400;
+                   background-image: url(./assets/img/focaccia.jpeg);
+                   background-size: cover;
+                }
+
+#didascalia { text-align: center;
+              color: #999999;
+            }
+
+#featured { border-left: 1px solid  #ffd877;
+            padding-left: 10px;
+            margin: 30px 0;
+          }
+
+#featured p { font-weight: 700;
+              color: #b5460f;
+}
+.evidence {text-decoration: underline;
+                font-weight: 700;
+                color: #107777;}     
+                
+.text_block {text-align: left;}
+
+.title {    padding-bottom: 30px;
+                    border-bottom: 1px solid #c4f3f2;}
+
+ul {line-height: 2;}
+
+/*footer*/
+
+footer {text-align: left;}
+
