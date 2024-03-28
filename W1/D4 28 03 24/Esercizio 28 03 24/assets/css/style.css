@@ -1,0 +1,51 @@
+/* IMPOSTAZIONI GENERALI */
+body {  margin: auto; width: 550px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    
+}
+#background {   width: 550px; height: 5200px;
+            box-sizing: border-box;
+            background-image: url(../img/sfondo.png);
+            background-repeat: repeat-y;
+            background-size: contain;
+}
+.box {box-shadow: 5px 5px 4px #666;margin: 10px; padding: 20px;  width: 450px;}
+/* HEADER */
+#head_box{       
+            background-image: linear-gradient(#01aacd, #006688);
+            color: white; font-size: 1.5em; line-height: 2em; font-weight: 600;
+}
+
+nav a {text-decoration: none; color: white;}
+/* MAIN */
+#main_box {background: white; text-align: left;}
+
+#main_box h1 {font-weight: 700; font-size: 2.5em;}
+
+#autore {color: gray; font-size: 1.5em;}
+
+.evidence {color: purple; font-weight: 600;}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+article {font-size: 1.5em; line-height: 2em;}
+
+li {list-style-type: disc; padding-left: 10px; margin-left: 10px;}
+
+code {background-color: lightgrey; border-color: 5px, solid, rgb(0, 0, 0) ;
+border-radius: 5px;}
+/* TABELLE */
+table {text-align: center; width: 400px;}
+
+caption {font-style: italic; font-weight: 600; font-size: 1.3em;}
+
+tr {padding: 20px; height: 100px;}
+
+th {background-color: #3673b2;
+ color: white; border-left: 1px solid white;
+font-size: 1.5em;}
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
