@@ -1,0 +1,167 @@
+/* Your styles here */
+body { /*elementi comuni del body*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; padding: 0;
+    text-align: center;
+}
+/* fine body*/
+
+/* stili testo */
+h2 {font-size: 30px;}
+h3 {font-size: 20px;}
+.link {
+    color: #205B61;
+    text-decoration: none;     
+}
+/* fine stili di testo*/
+
+/* stili blocchi*/
+.block {margin: 20px 0;}
+/* fine stili blocchi*/
+
+/* gruppo dei colori di sfondo tramite classi "bkg_*" */
+.bkg_blu {background-color: #222F3F;}
+
+.bkg_lightBlu {background-color: #36475A;}
+
+.bkg_lightGray {background-color: #E9EDEE;}
+
+.bkg_orange {background-color: #F56600;}
+
+.bkg_white {background-color: white;}
+/* fine colori*/
+
+/* inizio header */
+header  {
+    text-align: left;
+    margin: 0;
+}
+
+header div {padding: 5px 20px}
+header img {
+    width: 100px;
+}
+
+nav {width: auto; height: 25px;}
+
+nav li {
+    float: left;
+    font: 5px; list-style: none;
+    margin:5px 10px; padding: 5px auto;
+ }
+
+nav a {color: white; text-decoration: none;}
+
+/* fine header */
+
+/* inizio main*/
+main {
+    margin: 0;
+    padding: 20px}
+
+main div:first-child {/* blocco principale a fondo grigio chiaro*/
+    height: 15px; margin: 0; padding: 10px;
+    font: 5px; color: white;
+}
+/* secondo blocco (holiday gift guide)*/
+#boxN1 {
+    background-image: url(../images/bg-image.png);
+    background-size: cover;
+    width: 100%; height: 150px;
+    box-sizing: content-box;
+    background-size: cover;
+    background-repeat: no-repeat; /* non l'ho fatto duplicare perchè non mi piaceva a livello estetico*/
+    color: white;
+}
+
+#boxN1:hover { background-image: url(../images/bg-img.png);
+                            background-size: cover;
+                            width: 100%; height: 150px;
+                            box-sizing: content-box;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+
+#text_box {
+    height: 150px;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 50px 0;    
+}
+
+#text_box:hover {color: #222F3F;}
+
+/* fine secondo blocco */
+
+/* terzo blocco "immagini"*/
+
+#text_box2 {
+    text-align: left;
+    color: #222F3F;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+main div h3 {
+    padding-left: 20px;
+    font-weight: bold;
+    display: inline;
+    margin-right: 5px;
+    }
+
+#immagini {
+    width: 100%; height: 420px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#immagini img {
+    float: left;
+    margin-right: 1.7%;
+    text-align: justify;
+    width: 23%; height: 400px;
+    box-sizing: border-box;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+/* fine terzo blocco*/
+
+/* inizio quarto blocco "game"*/
+
+#boxN3 img {width: 100%;}
+
+/* fine quarto blocco*/
+
+/* inizio quinto blocco "sound"*/
+
+#boxN4 img {width: 100%;}
+
+/* fine quindo blocco */
+
+/* fine main*/
+
+/* inizio footer*/
+footer div:first-child{
+    box-sizing: content-box;
+    height: 40px;
+}
+
+footer div a {
+    color: white;
+    line-height: 40px;
+}
+
+footer div:last-child {
+    box-sizing: content-box;
+    height: 210px;
+}
+
+#logo_bottom{
+    padding: 70px;
+}
+
+#logo_bottom img {width: 200px;}
+/* fine footer*/
