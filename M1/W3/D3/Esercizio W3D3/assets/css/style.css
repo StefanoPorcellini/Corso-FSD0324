@@ -1,0 +1,25 @@
+body {
+        font-family: "Caveat", cursive;
+        font-weight: 600; font-size: 25px;
+        text-align: center;
+        color: #555;
+        margin: 0;
+        padding: 0;
+       
+    }
+
+h1 {    margin: 50px;
+        font-size: 50px;}
+
+header div {margin: 20px;}
+
+form {display: inline;}
+
+.material-symbols-outlined {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+li {display: inline;}
+
