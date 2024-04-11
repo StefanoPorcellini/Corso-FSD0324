@@ -1,26 +1,46 @@
+const handleSubmit = function(e) {
+e.preventDefault();
 addText();
 cancella ();
-
+chkList();
+}
 
 function addText () {
-    let newText = document.getElementById('newText');
-    var btnCancella = `<button id="cancella" class="material-symbols-outlined">delete</button><br>`
-        document.getElementById("addText").addEventListener('click', function(){
-    newList = `<li> ${newText.value} </li> ${btnCancella}`;
-    document.getElementById("lista").innerHTML += newList;
-    newText.value = '';})
+    let newText = document.querySelector('#newText input');
+    let taskList = document.querySelector('#lista')
+    let newList =    `
+                        <div class="lista">
+                            <span id="newTask">
+                                ${newText.value}
+                            </span>
+                            <button class="delete">
+                                <i class="fa-regular fa-trash-can"></i>                            </button>
+                        </div>                  
+                    `;
+    taskList.innerHTML += newList;
+    newText.value = '';
 };
 
-
-function cancella () {
-    document.getElementById("cancella").addEventListener('click', function(){
-    let lista = document.getElementById("lista");
-        if (lista.lastChild) {
-            lista.removeChild(lista.lastChild);
-        }
-    });
-};
 
 function chkList () {
-    let lista = document.getElementById("lista")
+    let allList = document.querySelectorAll('lista');
+    for (let i = 0; i < allList.length; i++) {
+        allList[i].addEventListener('click', function () {
+            this.classList.toggle('checked')
+        });
+            }
+};
+
+function cancella () {
+    let allDelete = document.querySelectorAll('.delete');
+    allDelete.forEach(singleDelate => {
+        singleDelate.addEventListener('click', function(){
+            this.parentNode.remove();
+        })        
+    });
 }
+
+window.onload = function () {
+    let form = document.querySelector('form');
+    form.addEventListener('submit', handleSubmit);
+};

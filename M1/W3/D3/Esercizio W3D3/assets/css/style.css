@@ -1,25 +1,60 @@
 body {
+        background-image: url(..//img/superficie-di-tavole-bianche.jpg);
+        background-size: cover;
+        box-sizing: border-box;
         font-family: "Caveat", cursive;
         font-weight: 600; font-size: 25px;
-        text-align: center;
         color: #555;
         margin: 0;
         padding: 0;
-       
     }
+
+header  {text-align: center;}
 
 h1 {    margin: 50px;
         font-size: 50px;}
 
-header div {margin: 20px;}
-
-form {display: inline;}
-
-.material-symbols-outlined {
-        background-color: transparent;
+button  {
+        color: transparent;
         border: none;
+}
+
+#addText i       {
+        color: green;
+        font-size: 25px;
         cursor: pointer;
     }
 
-li {display: inline;}
+form {  display: inline;}
+
+input { width: 300px; height: 30px;}
+
+#addText {height: 30px;}
+
+.delete {
+            color: red;
+            float: right;
+            background-color: transparent;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+#newText .material-symbols-outlined {color: green}
+
+.checked {         
+            color: green;
+            text-decoration: line-through;}
+
+#lista {   
+            margin: 20px;
+            width: 50%; height: 50px;
+            position: absolute;
+            margin: 20px;
+            left: 25%;
+            background-color: rgba(236, 214, 189, 0.63);
+            cursor: pointer;
+            border-radius: 10px;
+
+}       
+
 

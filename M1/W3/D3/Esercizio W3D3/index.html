@@ -9,21 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://www.ionos.it/digitalguide/path/to/font-awesome/css/font-awesome.min.css">
     <body>
     <header>
         <h1>Cose da fare</h1>
-        <div>
-            <form action="submit">Nuova attività da fare 
-            <input id="newText" type="text" name="newText" placeholder="inserisci la tua attività" required>
+        <div id="newText">
+            <form>Nuova attività da fare: 
+                <input  type="text" placeholder="inserisci la tua attività" required>
+                <button id="addText"><i class="fa-solid fa-circle-plus"></i></button>
             </form>
-            <button id="addText" class="material-symbols-outlined">add_task</button>
         </div>
     </header>
     <main>
-        <ul id="lista">
-        </ul>
+        <div id="lista">
+        </div>
         <script src="./assets/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/579dcdc4ce.js" crossorigin="anonymous"></script>
     </main>
 </body>
 </html>
