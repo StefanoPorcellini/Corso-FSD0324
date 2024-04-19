@@ -301,7 +301,10 @@ document.getElementById("timer").innerHTML = `
                     d="M 50, 50 m -45, 0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0"></path>
             </g>
         </svg>
-        <p class=second_txt>secondi<br>rimanenti</p>
+        <div id=second>
+            <p class=second_txt>secondi</p>
+            <p class=second_txt_bottom>rimanenti</p>
+        </div>
         <span id="base-timer-label" class="base-timer__label">${TIME_LIMIT}</span>
     </div>
 `;
