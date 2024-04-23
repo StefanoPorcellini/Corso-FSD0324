@@ -423,15 +423,6 @@ footer a {
   }
 }
 
-/*#buttonConteiner {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  box-sizing: border-box;
-  
-}*/
-
 #groupUP button, #toTheTop {
   box-sizing: border-box;
   width: 50px;
