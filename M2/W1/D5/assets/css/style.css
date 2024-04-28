@@ -95,6 +95,7 @@ nav {
 }
 
 #boxBottomNav{
+    height: 466px;
     z-index: -1;
     background-color: #ffc017;
     position: relative;
@@ -102,14 +103,14 @@ nav {
 }
 
 #bottomNav {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #191919;
 }
 
-#bottomNav div {
-    max-width: 40%;
+#leftSide {
     margin-left: 10%;
 }
 
@@ -134,12 +135,10 @@ nav {
     font-size: 1.2em;
 }
 
-#mLogo {
-        padding-left: 20%;
-}
-
-
 #trending {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 2em 10%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -216,8 +215,8 @@ h5 {
 }
 
 #articleConteiner {
-    flex-basis: 100%;
-    padding: 2em 6em 2em 10%;
+    flex-basis: 150%;
+    padding: 2em 1em 2em 10%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -321,4 +320,14 @@ line-height: 1.5em;
     text-decoration: none;
     font-family: "Roboto", serif;
     color: gray;
+}
+
+@media screen and (max-width: 1599px) {
+    aside {
+        display: none;
+    }
+    
+    #articleConteiner {
+        padding-right: 10%;
+    }
 }
