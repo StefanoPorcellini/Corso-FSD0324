@@ -1,0 +1,324 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: "Roboto", serif;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#navMenu {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 10%;
+    border-bottom: 1px solid #191919;
+}
+
+.colorNav{
+    background-color: #ffc017;
+}
+
+.whiteNav {
+    animation: navToWhite 0.3s linear 1 forwards;
+}
+
+.navToYellow {
+    animation: navToYellow 0.3s linear 1 forwards;
+}
+
+@keyframes navToWhite {
+    0% { background-color: #ffc017;}
+    100% { background-color: #fff;}
+}
+
+@keyframes navToYellow {
+    0% {background-color: #fff;}
+    100% {background-color: #ffc017;}
+}
+
+#blackToGreen {
+    font-family: "Roboto", serif;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 2em;
+    color: white;
+}
+
+.blackToGeenStart {
+    background-color:  #191919;
+}
+
+.animationGreenButton {
+    animation: blackToGreen 0.3s linear 1 forwards;
+}
+
+.greenToBlack {
+    animation: greenToBlack 0.3s linear 1 forwards;
+
+}
+
+@keyframes blackToGreen {
+    0% { background-color: #191919;}
+    100% { background-color: #1a8917;}
+}
+
+@keyframes greenToBlack {
+    0% {background-color: #1a8917;}
+    100% {background-color: #191919;}
+}
+
+.navList {
+    list-style: none;
+    display: inline;
+    margin: 0 0.5em;
+}
+
+.navLink {
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    color: #191919;
+}
+
+.blackButton {
+    font-family: "Roboto", serif;
+    text-decoration: none;
+    background-color:  #191919;
+    padding: 0.5em;
+    border-radius: 2em;
+    color: white;
+}
+
+#boxBottomNav{
+    z-index: -1;
+    background-color: #ffc017;
+    position: relative;
+    margin-top: 5em;
+}
+
+#bottomNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #191919;
+}
+
+#bottomNav div {
+    max-width: 40%;
+    margin-left: 10%;
+}
+
+#bottomNav  h1 {
+    font-family:  "Spectral", serif;
+    font-size: 6em;
+    margin-bottom: 2rem;
+    letter-spacing: -0.08em
+}
+
+#bottomNav p {
+    font-family: "Roboto", serif; 
+    font-size: 1.3em;  
+    padding-right: 25%;
+    margin-bottom: 2em;
+}
+
+#getStart {
+    text-align: center;
+    display: inline-block;
+    width: 12em;
+    font-size: 1.2em;
+}
+
+#mLogo {
+        padding-left: 20%;
+}
+
+
+#trending {
+    padding: 2em 10%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#trending div {
+    display: flex;
+}
+
+h5 {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+}
+
+#trendingConteiner {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "Roboto", serif;
+}
+
+.card {
+    width: 30%;
+    display: flex;
+    margin: 1.5em 0;
+}
+
+.card h3 {
+    color: lightgray;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.cardContent {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around 
+    ;
+}
+.cardTitle {
+    display: flex;
+    align-items: center;
+    margin: 0.2em 0 0.5em;
+}
+
+.img {
+    border-radius: 0.5em;
+    margin-right: 0.5em;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.cardContent h4 {
+    min-height: 3em;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0.8em 0;
+}
+
+.autor {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+#articleSection {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#articleConteiner {
+    flex-basis: 100%;
+    padding: 2em 6em 2em 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.articleBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    height: 10em;
+}
+
+.articleTxt {
+    width: 100%;
+    min-height: 2em;
+    line-height: 1.2em;
+}
+
+.conteiner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1em;
+}
+
+.imgArticle {
+    height: 100%;
+}
+
+.autorContainer {
+    display: flex;
+    align-items: center;
+}
+
+.articleTitle {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.footerArticle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Date {
+    color: gray;
+}
+
+.categories {
+    background-color: #eee;
+    padding: 0.2em 0.5em;
+    border-radius: 1.54em;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 10% 2em 1em;
+    color: gray;
+}
+
+aside h5 {
+    margin: 0.5em 0em;
+    color: #191919;
+}
+
+#btnBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.catBtn{
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    color: gray;
+    margin: 0.2em 0.5em 0.2em 0;
+    padding: 0.1em 0.3em;  
+    line-height: 2em;
+    border: 1px solid grey;
+}
+
+#asideUl {
+line-height: 1.5em;
+}
+
+#asideUl li {
+    list-style: none;
+    display: inline;
+    margin: 0 0.5em 0 0;
+    color: gray;
+}
+
+.asideLink {
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    color: gray;
+}
