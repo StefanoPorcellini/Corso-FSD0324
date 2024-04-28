@@ -6,7 +6,9 @@ body {
     font-family: "Roboto", serif;
 }
 
-nav {
+/* inizio nav */
+
+nav { 
     width: 100%;
     position: fixed;
     top: 0;
@@ -19,6 +21,8 @@ nav {
     padding: 2em 10%;
     border-bottom: 1px solid #191919;
 }
+
+/* classi per animazione nav */
 
 .colorNav{
     background-color: #ffc017;
@@ -41,6 +45,8 @@ nav {
     0% {background-color: #fff;}
     100% {background-color: #ffc017;}
 }
+
+/* classi per animazione pulsante */
 
 #blackToGreen {
     font-family: "Roboto", serif;
@@ -85,14 +91,7 @@ nav {
     color: #191919;
 }
 
-.blackButton {
-    font-family: "Roboto", serif;
-    text-decoration: none;
-    background-color:  #191919;
-    padding: 0.5em;
-    border-radius: 2em;
-    color: white;
-}
+/* Sezione Hero */
 
 #boxBottomNav{
     height: 466px;
@@ -108,6 +107,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #191919;
+    overflow: hidden;
 }
 
 #leftSide {
@@ -116,15 +116,15 @@ nav {
 
 #bottomNav  h1 {
     font-family:  "Spectral", serif;
-    font-size: 6em;
+    font-size: 8em;
     margin-bottom: 2rem;
     letter-spacing: -0.08em
 }
 
 #bottomNav p {
     font-family: "Roboto", serif; 
-    font-size: 1.3em;  
-    padding-right: 25%;
+    padding-right: 17%;
+    font-size: 1.6em;  
     margin-bottom: 2em;
 }
 
@@ -133,7 +133,19 @@ nav {
     display: inline-block;
     width: 12em;
     font-size: 1.2em;
+    font-family: "Roboto", serif;
+    text-decoration: none;
+    background-color:  #191919;
+    padding: 0.5em;
+    border-radius: 2em;
+    color: white;
 }
+
+#mLogo {
+    height: 520px;
+}
+
+/* inizio parte trending */
 
 #trending {
     display: flex;
@@ -209,6 +221,8 @@ h5 {
     font-size: 1.1em;
 }
 
+/* inizio pare article */
+
 #articleSection {
     display: flex;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -274,6 +288,8 @@ h5 {
     border-radius: 1.54em;
 }
 
+/* inizio parte menu aside */
+
 aside {
     display: flex;
     flex-direction: column;
@@ -321,6 +337,8 @@ line-height: 1.5em;
     font-family: "Roboto", serif;
     color: gray;
 }
+
+/* media query per ottimizzazione dai 1600px in giù */
 
 @media screen and (max-width: 1599px) {
     aside {
