@@ -1,0 +1,19 @@
+header {
+    background-color: $bg-hero;
+    font-family: $font-family;
+    color: $text-color;
+    #hero {
+        display: flex;
+        justify-content: center;
+        gap: $gap;
+        margin: 2em;
+        padding: 2em 0;
+        .heroLeft{
+            width: 30%;
+        }
+        img {
+            width: 50%;
+            @include floating($radius, $box-shadow, $border)
+        }
+    }
+}

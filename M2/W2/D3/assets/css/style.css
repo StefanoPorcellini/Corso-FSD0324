@@ -1,0 +1,159 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+  font-style: italic;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 1em 0;
+  text-align: justify;
+}
+
+header {
+  background-color: #640fc5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f4f4f4;
+}
+header #hero {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 2em;
+  padding: 2em 0;
+}
+header #hero .heroLeft {
+  width: 30%;
+}
+header #hero img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  border: 2px solid #fff;
+}
+
+main #fotoContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+main #fotoContainer img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #555;
+  border: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+nav img {
+  width: 10%;
+  padding: 1em 2em;
+}
+nav ul {
+  display: flex;
+  gap: 1.5em;
+  list-style: none;
+  margin-right: 2em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.btn-conteiner {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin: 1em 0;
+}
+.btn-conteiner :nth-of-type(1) {
+  background-color: #0e6cff;
+}
+.btn-conteiner :nth-of-type(2) {
+  background-color: #ff8700;
+}
+.btn-conteiner :nth-of-type(3) {
+  background-color: #4caf50;
+}
+.btn-conteiner button {
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+.btn-conteiner button:hover {
+  transform: scale(0.95);
+}
+
+.heroLeft {
+  animation: animationHeroLeft 500ms linear 1;
+}
+
+@keyframes animationHeroLeft {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+#hero > img {
+  animation: animationImg 500ms linear 1;
+}
+
+@keyframes animationImg {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+@mixin navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+@mixin floating ($rounded, $shadow, $borderBox) {
+    border-radius: $rounded;
+    box-shadow: $shadow;
+    border: $borderBox;
+}
+

@@ -1,0 +1,31 @@
+.heroLeft {
+    animation: animationHeroLeft 500ms linear 1;
+}
+
+@keyframes animationHeroLeft {
+    0% { transform: translateY(-50px);
+         opacity: 0;
+
+    }
+
+    100% { transform: translateY(0px);
+        opacity: 1;
+
+    } 
+}
+
+#hero>img {
+    animation: animationImg 500ms linear 1;
+}
+
+@keyframes animationImg {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

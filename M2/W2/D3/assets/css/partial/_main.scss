@@ -1,0 +1,9 @@
+main {
+        #fotoContainer {
+            display: flex;
+            justify-content: space-evenly;
+                img {
+                    @include floating($radius, $shadow-sm, 0)
+                };
+    }
+}
