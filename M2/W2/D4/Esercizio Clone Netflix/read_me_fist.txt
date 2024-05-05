@@ -5,3 +5,5 @@ Per l'home page ho utilizzato i caroselli, singoli per mobile (controllo con sol
 La pagina di settings l'ho fatta tramite modale apribile tramite l'icona dell'ingranaggio.
 Per le pagine degli utenti li ho collegati cliccando sull'icona del avatare e poi selezionando l'utente;
 si aprirà il modale con la pagina del utente scelto.
+Per il file css collegato alla pagina ho usato SASS per modificare i colori di bootstrap.
+Ho lasciato il file scss nella cartela assets/css/scss, ma non ho copiato tutta la sorgente di bootstrap.
