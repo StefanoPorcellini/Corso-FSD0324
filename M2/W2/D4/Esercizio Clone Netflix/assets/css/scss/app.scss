@@ -1,0 +1,30 @@
+@import 'scss/functions';
+@import 'scss/variables';
+
+$new-primary: #db0000;
+$new-secondary: #000;
+
+$new-theme-colors: (
+  'primary': $new-primary,
+  'secondary': $new-secondary,
+  );
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+#login_page {
+    background-image: url(../img/bg_home.jpg);
+}
+
+#search-button {
+  width: 56px;
+}
+
+#myCarousel {
+  margin-top: 50px;
+}
+
+
+
+@import 'scss/bootstrap.scss';

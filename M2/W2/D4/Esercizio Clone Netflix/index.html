@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <link rel="icon" href="./assets/img/netflix_icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    
+</head>
+<body class="h-100 bg-secondary text-white">
+
+    <div id="login_page" class="h-100 d-flex flex-column align-items-center justify-content-center">
+        <div id="login_box" class="card bg-dark bg-opacity-75" style="width: 18rem;">
+            <img src="./assets/img/netflix_logo.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <form id="login">
+                    <div class="form-floating mb-3">
+                        <input id="email" name="email" type="email" class="form-control " id="floatingInput" placeholder="">
+                        <label for="floatingInput">Email</label>
+                      </div>
+                      <div class="form-floating">
+                        <input id="password" name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                      <button id="btnLogin" type="submit" class="btn btn-primary mt-3 px-4">Accedi</button>
+                  </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="home-page" class="d-none">
+        <nav class="navbar bg-secondary border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/netflix_logo.png" alt="logo netflix"  height="40" class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">TV Show</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recently Added</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                  </li>     
+                  <li class="nav-item">
+                    <button id="settingBtn" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#settingModal"><i class="bi bi-gear-wide"></i></button></li>     
+                </ul>
+                <form class="d-flex align-items-center" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <a href="#" class="text-white fs-4 mx-2"><i class="bi bi-search"></i></a>
+                  <a href="#" class="text-white fs-4 mx-2"><i class="bi bi-bell-fill"></i></i></a>
+                  <div id="user" class="dropdown text-end ms-3 p-0 order-lg-5">
+                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a href="#"><img src="./assets/img/avatar.png" alt="user avatar" height="40px"></a>
+                    </button>
+                    <ul id="avatarConteiner" class="dropdown-menu dropdown-menu-end">
+                      <li><button id="avatarBtn" type="button" class="btn" data-bs-target="#userBackdrop" data-bs-toggle="modal" ><img src="./assets/img/avatar.png" alt="user avatar" height="60px"> User</button></li>                      
+                      <li><button id="kidsBtn" type="button" class="btn" data-bs-target="#kidsBackdrop" data-bs-toggle="modal" ><img src="./assets/img/kids_icon.png" alt="kids_icon avatar" height="60px"> Kids</button></li>                        
+                    </ul>              
+                  </div>
+                </form>  
+              </div>
+            </div>
+        </nav>
+        
+        <div id="tv-shows" class="m-3">
+          <div id="title" class="d-flex align-items-center gap-3">
+              <h1 class="m-0">TV Shows</h1>
+              <button class="btn btn-sm btn-outline-light dropdown-toggle rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Genres
+              </button>
+              <div class="dropdown">
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action & Adventure</a></li>
+                  <li><a class="dropdown-item" href="#">Anime</a></li>
+                  <li><a class="dropdown-item" href="#">Children & Family</a></li>
+                  <li><a class="dropdown-item" href="#">Classic</a></li>
+                  <li><a class="dropdown-item" href="#">Comedies</a></li>
+                  <li><a class="dropdown-item" href="#">Documentaries</a></li>
+                  <li><a class="dropdown-item" href="#">Dramas</a></li>
+                  <li><a class="dropdown-item" href="#">Horror</a></li>
+                </ul>
+              </div>
+          </div>
+
+          <div id="TrendingCarousel" class="">
+            <h3 class="m-3">Trending Now</h3>
+
+            <div id="TrendingCarouselSmall" class="carousel slide d-lg-none" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/media/media0.webp" class="d-block w-100" alt="sherlock img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media1.jpg" class="d-block w-100" alt="american factory img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media2.webp" class="d-block w-100" alt="the good place img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media3.webp" class="d-block w-100" alt="genius img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media4.jpg" class="d-block w-100" alt="cuba img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media5.webp" class="d-block w-100" alt="china hu$tle img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media6.jpg" class="d-block w-100" alt="social dilemma img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media7.webp" class="d-block w-100" alt="arog img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media8.webp" class="d-block w-100" alt="yasi bati img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media9.jpg" class="d-block w-100" alt="connected img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media10.jpg" class="d-block w-100" alt="spy img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media11.jpg" class="d-block w-100" alt="the college img">
+                </div>
+              </div>
+            </div>
+
+            <div id="carouselTrendingLg">
+              <div id="carouselTrendingLarge" class="carousel slide d-none d-lg-block">
+                <div class="carousel-inner">
+                  <div class="carousel-item active text-center container-fluid">
+                    <img src="./assets/img/media/media0.webp" class="col-2 me-5" alt="sherlock img">
+                    <img src="./assets/img/media/media1.jpg" class="col-2 me-5" alt="american factory img">
+                    <img src="./assets/img/media/media2.webp" class="col-2 me-5" alt="the good place img">
+                    <img src="./assets/img/media/media3.webp" class="col-2" alt="genius img">
+                  </div>
+                  <div class="carousel-item text-center">
+                    <img src="./assets/img/media/media4.jpg" class="col-2 me-5" alt="cuba img">
+                    <img src="./assets/img/media/media5.webp" class="col-2 me-5" alt="china hu$tle img">
+                    <img src="./assets/img/media/media6.jpg" class="col-2 me-5" alt="social dilemma img">
+                    <img src="./assets/img/media/media7.webp" class="col-2 " alt="arog img">
+                  </div>
+                  <div class="carousel-item text-center">
+                    <img src="./assets/img/media/media8.webp" class="col-2 me-5" alt="yasi bati img">
+                    <img src="./assets/img/media/media9.jpg" class="col-2 me-5" alt="connected img">
+                    <img src="./assets/img/media/media10.jpg" class="col-2 me-5" alt="spy img">
+                    <img src="./assets/img/media/media11.jpg" class="col-2" alt="the college img">
+                  </div>                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrendingLarge" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTrendingLarge" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="watchAgain" >
+            <h3 class="m-3">Watch it Again</h3>
+
+            <div id="watchAgainCarouselSmall" class="carousel slide d-lg-none" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/media/media12.jpg" class="d-block w-100" alt="tribes img">
+                  </div> 
+                  <div class="carousel-item ">              
+                    <img src="./assets/img/media/media13.jpg" class="d-block w-100" alt="narcos img">
+                  </div class="carousel-item active">
+                  <div class="carousel-item ">
+                    <img src="./assets/img/media/media14.webp" class="d-block w-100" alt="breaking bad img">
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="./assets/img/media/media15.jpg" class="d-block w-100" alt="explained img">
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="./assets/img/media/media16.webp" class="d-block w-100" alt="rick and morty img">
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="./assets/img/media/media17.jpg" class="d-block w-100" alt="white helmets img">
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="./assets/img/media/media18.jpg" class="d-block w-100" alt="spicraft img">
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="./assets/img/media/media19.webp" class="d-block w-100" alt="bettter call saul img">
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="./assets/img/media/media20.jpg" class="d-block w-100" alt="inside bill's brain img">
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="./assets/img/media/media21.webp" class="d-block w-100" alt="vikings img">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="carouselWatchAgainLg">
+              <div id="carouselWatchLarge" class="carousel slide d-none d-lg-block">
+                <div class="carousel-inner">
+                  <div class="carousel-item active text-center container-fluid">
+                    <img src="./assets/img/media/media12.jpg" class="col-2 me-5" alt="sherlock img">
+                    <img src="./assets/img/media/media13.jpg" class="col-2 me-5" alt="american factory img">
+                    <img src="./assets/img/media/media14.webp" class="col-2 me-5" alt="the good place img">
+                    <img src="./assets/img/media/media15.jpg" class="col-2" alt="explained img">
+                  </div>
+                  <div class="carousel-item text-center">
+                    <img src="./assets/img/media/media16.webp" class="col-2 me-5" alt="cuba img">
+                    <img src="./assets/img/media/media17.jpg" class="col-2 me-5" alt="china hu$tle img">
+                    <img src="./assets/img/media/media18.jpg" class="col-2 me-5" alt="social dilemma img">
+                    <img src="./assets/img/media/media19.webp" class="col-2 " alt="arog img">
+                  </div>
+                  <div class="carousel-item text-center">
+                    <img src="./assets/img/media/media20.jpg" class="col-2 me-5" alt="yasi bati img">
+                    <img src="./assets/img/media/media21.webp" class="col-2 me-5" alt="connected img">
+                  </div>                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselWatchLarge" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselWatchLarge" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+  
+          </div> 
+
+          <div id="newRelase" >
+            <h3 class="m-3">New Relase</h3>
+
+            <div id="newRelaseCarouselSmall" class="carousel slide d-lg-none" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/media/media22.webp" class="d-block w-100" alt="how i meet your mother img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media23.webp" class="d-block w-100" alt="dream big img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media24.jpg" class="d-block w-100" alt="our planet img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media25.webp" class="d-block w-100" alt="modern family img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media26.webp" class="d-block w-100" alt="leyla and mecnun img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media27.jpg" class="d-block w-100" alt="history 101 img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media28.jpg" class="d-block w-100" alt="peaky blinders img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media29.jpg" class="d-block w-100" alt="my octopus teacher img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media30.jpg" class="d-block w-100" alt="magic for humans img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media31.webp" class="d-block w-100" alt="the most unknow img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/media/media32.jpg" class="d-block w-100" alt="the last dance img">
+                </div>                
+              </div>
+            </div>     
+
+            <div id="carouselNewRelaseLg">
+              <div id="newRelaseCarouselWatchLarge" class="carousel slide d-none d-lg-block">
+                <div class="carousel-inner">
+                  <div class="carousel-item active text-center container-fluid">
+                    <img src="./assets/img/media/media22.webp" class="col-2 me-5" alt="how i meet your mother img">
+                    <img src="./assets/img/media/media23.webp" class="col-2 me-5" alt="dream big img">
+                    <img src="./assets/img/media/media24.jpg" class="col-2 me-5" alt="our planet img">
+                    <img src="./assets/img/media/media25.webp" class="col-2" alt="modern family img">
+                  </div>
+                  <div class="carousel-item text-center">
+                    <img src="./assets/img/media/media26.webp" class="col-2 me-5" alt="leyla and mecnun img">
+                    <img src="./assets/img/media/media27.jpg" class="col-2 me-5" alt="history 101 img">
+                    <img src="./assets/img/media/media28.jpg" class="col-2 me-5" alt="peaky blinders img">
+                    <img src="./assets/img/media/media29.jpg" class="col-2 " alt="my octopus teacher img">
+                  </div>
+                  <div class="carousel-item text-center">
+                    <img src="./assets/img/media/media30.jpg" class="col-2 me-5" alt="magic for humans img">
+                    <img src="./assets/img/media/media31.webp" class="col-2 me-5" alt="the most unknow img">
+                    <img src="./assets/img/media/media32.jpg" class="col-2 me-5" alt="the lat dance img">
+                  </div>                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#newRelaseCarouselWatchLarge" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#newRelaseCarouselWatchLarge" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+           
+          </div>
+          
+          <footer class="container opacity-50 mx-auto px-5">
+                <div class="row">
+                  <div id="socialLogo" class="col-12 d-flex gap-3 m-3">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-youtube"></i>
+                  </div>
+                </div>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Audio and Subtitle</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Audio Description</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Help Center</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Gift Card</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Media Center</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Investor Relations</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Jobs</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Terms of Use</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Privacy</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Legal Notices</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Cookies Preferences</a>
+                    <a href="#" class="col link-light link-offset-2 link-underline link-underline-opacity-0">Contact Us</a>
+                </div>
+                
+                <button type="button" class="btn btn-outline-light my-3">Service Code</button>
+                <p class="my-3 fs-6">&copy 1997-2024 Netflix inc. {i-0doofcda2fdf9c0de}</p>
+              </footer>
+
+        </div>
+
+    </div>
+
+    
+    <!-- User Modal -->
+    <div id="userBackdrop" class="modal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-secondary">
+          <div class="modal-header border-0">
+            <img src="./assets/img/netflix_logo.png" alt="netflix logo" height="60px">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center">
+            <div id="userPreferenceContainer" class="justify-content-center">
+                <h1 class="border-bottom pb-3">Edit Profile</h1>
+                  <div class="d-flex pb-3 border-bottom">
+                    <div class="mt-3 me-3">
+                      <img src="./assets/img/avatar.png" alt="user avatar" height="150px">
+                    </div>
+                    <div class="w-100 pb-3 d-flex flex-column">
+                         <p class="d-block text-bg-dark p-3 mt-3">User Name</p>
+                        <div>
+                          <p>Language:</p>
+                          <div class=" pb-3 border-bottom" role="group">
+                            <button type="button" class="btn btn-outline-light dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false">Language</button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">English</a></li>
+                              <li><a class="dropdown-item" href="#">French</a></li>
+                              <li><a class="dropdown-item" href="#">German</a></li>
+                              <li><a class="dropdown-item" href="#">Spanish</a></li>
+                              <li><a class="dropdown-item" href="#">Italian</a></li>
+                            </ul>
+                          </div>
+                         <div class="mt-3 pb-3 border-bottom">
+                           <p>Maturity Settings:</p>
+                           <p class="text-bg-dark d-inline-block p-2">ALL MATURITY RATINGS</p>
+                           <p>Show titles of <b>all maturity ratings</b> for this profile.</p>
+                           <button type="button" class="btn btn-outline-light rounded-0">E D I T</button>
+                         </div>
+                         <div class="mt-3 pb-3">
+                          <p>Autoplay controls</p>
+                          <div class="form-check mb-2">
+                            <input class="form-check-input bg-dark border-light rounded-0" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Autoplay next episode im a series on all devices.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input bg-dark border-light rounded-0" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Autoplay previews while browsing on all devices.
+                            </label>
+                          </div>
+
+                         </div>
+                        </div>
+                    </div>
+              
+                  </div>
+            </div>          
+            <div class="modal-footer border-0 justify-content-center">
+              <button type="button" class="btn btn-light rounded-0">SAVE</button>
+              <button type="button" class="btn btn-outline-light rounded-0" data-bs-dismiss="modal">CANCEL</button>
+              <button type="button" class="btn btn-outline-light rounded-0" data-bs-dismiss="modal">DELETE PROFILE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Kids Modal -->
+    <div id="kidsBackdrop" class="modal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-secondary">
+          <div class="modal-header border-0">
+            <img src="./assets/img/netflix_logo.png" alt="netflix logo" height="60px">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center">
+            <div id="kidsPreferenceContainer" class="justify-content-center">
+                <h1 class="border-bottom pb-3">Edit Profile</h1>
+                  <div class="d-flex pb-3 border-bottom">
+                    <div class="mt-3 me-3">
+                      <img src="./assets/img/kids_icon.png" alt="kids avatar" height="150px">
+                    </div>
+                    <div class="w-100 pb-3 d-flex flex-column">
+                         <p class="d-block text-bg-dark p-3 mt-3">Kids Name</p>
+                         <div>
+                          <p>Language:</p>
+                          <div class=" pb-3 border-bottom" role="group">
+                            <button type="button" class="btn btn-outline-light dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false">Language</button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">English</a></li>
+                              <li><a class="dropdown-item" href="#">French</a></li>
+                              <li><a class="dropdown-item" href="#">German</a></li>
+                              <li><a class="dropdown-item" href="#">Spanish</a></li>
+                              <li><a class="dropdown-item" href="#">Italian</a></li>
+                            </ul>
+                          </div>
+                         <div class="mt-3 pb-3 border-bottom">
+                           <p>Maturity Settings:</p>
+                           <p class="text-bg-dark d-inline-block p-2">ALL MATURITY RATINGS</p>
+                           <p>Show titles of <b>all maturity ratings</b> for this profile.</p>
+                           <button type="button" class="btn btn-outline-light rounded-0">E D I T</button>
+                         </div>
+                         <div class="mt-3 pb-3">
+                          <p>Autoplay controls</p>
+                          <div class="form-check mb-2">
+                            <input class="form-check-input bg-dark border-light rounded-0" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Autoplay next episode im a series on all devices.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input bg-dark border-light rounded-0" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Autoplay previews while browsing on all devices.
+                            </label>
+                          </div>
+
+                         </div>
+                    </div>
+              </div>
+              
+            </div>
+            </div>          
+          <div class="modal-footer border-0 justify-content-center">
+            <button type="button" class="btn btn-light rounded-0">SAVE</button>
+            <button type="button" class="btn btn-outline-light rounded-0" data-bs-dismiss="modal">CANCEL</button>
+            <button type="button" class="btn btn-outline-light rounded-0" data-bs-dismiss="modal">DELETE PROFILE</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- setting Modal -->
+    <div id="settingModal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content container text-dark">
+            <div class="modal-header">
+              <h3 class="modal-title py-2">Settings</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row border-bottom">
+                <h4 class="px-2">Account</h4>
+              </div>
+
+              <div class="row border-bottom">
+                <div class="col-12 px-2 col-lg-3">
+                  <p class="text-dark opacity-50 mt-2"><b>MEMBERSHIP & BILLING</b></p>
+                  <button type="button" class="btn btn-primary">Cancel Membership</button>
+                </div>
+                <div class="col-12 px-0 col-lg-9">
+                  <div class="d-flex flex-column border-bottom">
+                    <div class="d-flex w-100 justify-content-between">
+                      <span class="p-2">user@gmail.com</span>
+                      <span class="p-2"><a class="link-underline link-underline-opacity-0" href="#">Change account email</a></span>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                      <span class="p-2">password: *******</span>
+                      <span class="p-2"><a class="link-underline link-underline-opacity-0" href="#">Change password</a></span>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                      <span class="p-2">Phone: 321 044 1279</span>
+                      <span class="p-2"><a class="link-underline link-underline-opacity-0" href="#">Change phone number</a></span>
+                    </div>
+                  </div>
+                  <div class="d-flex w-100 justify-content-between border-bottom mt-2">
+                    <div class="d-flex p-2">
+                      <i class="bi bi-paypal"></i>
+                      <p class="ms-1"><i><b>PayPal</i></b></p>
+                      <p class="ms-2">user@gmail.com</p>
+                    </div>
+                    <div class="text-end">
+                      <p class="p-2 mb-0"><a class="link-underline link-underline-opacity-0" href="#">Update payment info</a></p>
+                      <p class="p-2 mb-0"><a class="link-underline link-underline-opacity-0" href="#">Billing dettails</a></p>
+                    </div>
+                  </div>
+                  <div class="d-flex w-100 justify-content-end border-bottom mt-2">
+                    <div class="text-end">
+                      <p class="p-2 mb-0"><a class="link-underline link-underline-opacity-0" href="#">Redeem gift card or promo code</a></p>
+                      <p class="p-2 mb-0"><a class="link-underline link-underline-opacity-0" href="#">Where to buy gift cards</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>             
+
+            <div class="row border-bottom">
+              <div class="col-12 col-lg-3">
+                <p class="text-dark opacity-50 mt-2"><b>PLAN DETAILS</b></p>
+              </div>
+              <div class="col-12 col-lg-9 d-flex justify-content-between align-items-center my-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="me-2 mb-0">Premium</p>
+                  <img src="./assets/img/logo_hd.svg" alt="logo UHD" height="20px">
+                </div>
+                <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Change plan</a></p>
+              </div>
+            </div>
+
+            <div class="row border-bottom ">
+              <div class="col-12 col-lg-3">
+                <p class="text-dark opacity-50 mt-2"><b>SETTINGS</b></p>
+              </div>
+              <div class="col-12 col-lg-9 my-2">                
+                <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Parental controls</a></p>
+                <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Test partecipation</a></p>
+                <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Menage diwnload devices</a></p>
+                <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Activate a device</a></p>
+                <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Recent device streaming activity</a></p>
+                <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Sign out of all device</a></p>
+              </div>
+            </div>
+
+            <div class="row border-bottom ">
+              <div class="col-12 col-lg-3">
+                <p class="text-dark opacity-50 mt-2"><b>MY PROFILE</b></p>
+              </div>
+              <div class="col-12 col-lg-9 d-lg-flex justify-content-lg-between mt-2">
+                <div class="d-flex align-items-center">
+                  <img class="me-2" src="./assets/img/avatar.png" alt="logo avatar" height="40px">
+                  <p class="m-0"><b>User Name</b></p>
+                </div>
+                <div>
+                  <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Menage profile</a></p>
+                  <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Add profile email</a></p>
+                </div>            
+              </div>
+              <div class="col-12 col-lg-4 offset-lg-3 d-lg-flex mb-2">
+                <div class="col-12">
+                  <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Language</a></p>
+                  <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Playback settings</a></p>
+                  <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Subtitle apparance</a></p>
+                </div>
+                <div class="col-12">
+                  <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Viewing activity</a></p>
+                  <p class="m-0"><a class="link-underline link-underline-opacity-0" href="#">Ratings</a></p>
+                </div>
+              </div>
+            </div>  
+
+            <div class="modal-footer border-0 justify-content-center">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
