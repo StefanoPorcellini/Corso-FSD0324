@@ -5,6 +5,7 @@ const deleteCard = function (e) {
     e.target.closest('.card').remove()
 }
 
+
 const getBooks = function() {
     fetch('https://striveschool-api.herokuapp.com/books')
     .then((response)=> {
@@ -34,8 +35,6 @@ const getBooks = function() {
                         </div>
                 </div>
                 `
-          
-
             })
          }
         genCards(arrayOfCards)
