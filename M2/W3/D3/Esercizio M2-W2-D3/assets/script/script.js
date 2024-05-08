@@ -2,10 +2,6 @@ const currentYear = new Date().getFullYear()
 document.getElementById('curerntYear').innerText = currentYear
 
 const deleteCard = function (e) {
-    console.log('ELIMINO CARD', e)
-    // come faccio a capire QUALE degli n bottone elimina mi ha portato qui? devo capire QUALE card eliminare...
-    // e.target sarà il bottone che abbiamo cliccato
-    console.log(e.target.closest('.card'))
     e.target.closest('.card').remove()
 }
 
