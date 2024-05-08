@@ -1,7 +1,13 @@
 const currentYear = new Date().getFullYear()
 document.getElementById('curerntYear').innerText = currentYear
 
-
+const deleteCard = function (e) {
+    console.log('ELIMINO CARD', e)
+    // come faccio a capire QUALE degli n bottone elimina mi ha portato qui? devo capire QUALE card eliminare...
+    // e.target sarà il bottone che abbiamo cliccato
+    console.log(e.target.closest('.card'))
+    e.target.closest('.card').remove()
+}
 
 const getBooks = function() {
     fetch('https://striveschool-api.herokuapp.com/books')
@@ -25,7 +31,7 @@ const getBooks = function() {
                           
                           <div class="d-flex justify-content-between">
                                 <a href="#" class="btn btn-success">Add to <span><i class="bi bi-cart4"></i></span></a>
-                                <a href="#" class="btn btn-danger"><i class="bi bi-trash3"></i></a>
+                                <a href="#" class="btn btn-danger" onclick="deleteCard(event)"><i class="bi bi-trash3"></i></a>
                           </div>
                         </div>
                 </div>
