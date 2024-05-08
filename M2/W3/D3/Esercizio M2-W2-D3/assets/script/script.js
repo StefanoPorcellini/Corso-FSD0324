@@ -25,9 +25,11 @@ const getBooks = function() {
                           <h4 class="card-title">${card.title}</h4>
                           
                           <div class="d-flex justify-content-between align-items-center mt-2">
-                                <p class="card-text m-0"><b>€ <span id="price">${card.price}</span></b></p>
-                                <a href="#" class="btn btn-success">Add to <span><i class="bi bi-cart4"></i></span></a>
-                                <a href="#" class="btn btn-danger" onclick="deleteCard(event)"><i class="bi bi-trash3"></i></a>
+                                <p class="card-text m-0 fs-4"><b>€ <span id="price">${parseFloat(card.price).toFixed(2)}</span></b></p>
+                                <div>
+                                    <a href="#" class="me-1 btn btn-success onclick="addToCart(event)">Add to <span><i class="bi bi-cart4"></i></span></a>
+                                    <a href="#" class="btn btn-danger" onclick="deleteCard(event)"><i class="bi bi-trash3"></i></a>
+                                </div>
                           </div>
                         </div>
                 </div>
