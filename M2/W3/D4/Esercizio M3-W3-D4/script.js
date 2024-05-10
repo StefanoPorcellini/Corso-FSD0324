@@ -98,7 +98,7 @@ submitEvent = function(e) {
 
 
 const hideCard = function(e){
-    e.target.closest('.card').remove()
+    e.target.closest('.col-md-4').classList.add('d-none')
 }
 
 const getPhoto = function() {
