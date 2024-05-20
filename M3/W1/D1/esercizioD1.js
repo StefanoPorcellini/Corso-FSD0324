@@ -7,12 +7,13 @@ class User {
         this.nome = _nome;
         this.cognome = _cognome;
     }
-    ricarica(importo = 10) {
-        this.credito = importo + this.credito;
-        console.log('Ricarica effettuata, nuovo credito residuo: € ', this.credito);
+    ricarica(importo) {
+        this.credito += importo;
     }
 }
 const utente = new User('Mario', 'Rossi', 5, 15);
+utente.ricarica(10);
+console.log('Ricarica effettuata, nuovo credito residuo: € ', utente.credito);
 console.log('utente', utente);
 // let ricarica = function (creditoUtente:number | any, importo:number) {
 //     creditoUtente.credito += importo

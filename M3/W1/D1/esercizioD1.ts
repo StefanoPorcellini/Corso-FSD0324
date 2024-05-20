@@ -18,13 +18,16 @@ class User implements iSmartphone{
         this.nome = _nome
         this.cognome = _cognome
     }
-     ricarica(importo:number = 10) {
-        this.credito = importo + this.credito
-        console.log('Ricarica effettuata, nuovo credito residuo: € ', this.credito);
+     ricarica(importo:number) {
+        this.credito += importo
 }}
 
 
 const utente = new User('Mario', 'Rossi', 5, 15)
+
+utente.ricarica(10)
+
+console.log('Ricarica effettuata, nuovo credito residuo: € ', utente.credito);
 
 console.log('utente', utente);
 
