@@ -9,6 +9,11 @@ const routes: Routes = [
 
   {
     path:'',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path:'home',
     component: HomeComponent
   },
   {
@@ -20,7 +25,7 @@ const routes: Routes = [
     component: InactivePostComponent
   },
   {
-    path:'*/:id',
+    path:'post-detail/:id',
     component: PostDetailComponent
   },
   {

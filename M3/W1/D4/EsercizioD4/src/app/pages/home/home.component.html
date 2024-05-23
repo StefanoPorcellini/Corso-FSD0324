@@ -2,10 +2,12 @@
 
 <div class="card mb-3" *ngIf="postsArr.length>0">
   <div class="card-body d-flex flex-column align-items-md-start">
-    <h5 class="card-title">{{ postsArr[0].title }}</h5>
-    <p class="card-text">{{ postsArr[0].body }}</p>
-    <p class="fst-italic">Tags: {{ postsArr[0].tags }}</p>
-    <button class="btn btn-primary text-white align-self-sm-end">Dettagli</button>
+    <h5 class="card-title">{{ firstPost.title }}</h5>
+    <p class="card-text">{{ firstPost.body }}</p>
+    <p class="fst-italic">Tags: {{ firstPost.tags }}</p>
+    <button
+    class="btn btn-primary text-white align-self-sm-end" [routerLink]="['/post-detail', firstPost.id]"
+    >Dettagli</button>
   </div>
 </div>
 
@@ -18,7 +20,8 @@
         <h5 class="card-title pb-3">{{ p.title }}</h5>
         <p class="card-text">{{ p.body }}</p>
         <p class="fst-italic">Tags: {{ p.tags }}</p>
-        <button class="btn btn-info text-white align-self-sm-end">Dettagli</button>
+        <button class="btn btn-info text-white align-self-sm-end"
+        [routerLink]="['/post-detail', p.id]">Dettagli</button>
       </div>
     </div>
 </div>

@@ -8,7 +8,8 @@
         <h5 class="card-title pb-3">{{ p.title }}</h5>
         <p class="card-text">{{ p.body }}</p>
         <p class="fst-italic">Tags: {{ p.tags }}</p>
-        <button class="btn btn-warning text-white align-self-sm-end">Dettagli</button>
+        <button class="btn btn-warning text-white align-self-sm-end"
+        [routerLink]="['/post-detail', p.id]">Dettagli</button>
       </div>
     </div>
 </div>

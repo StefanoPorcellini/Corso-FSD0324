@@ -41,5 +41,6 @@ export class HomeComponent {
   getRandomPosts(): iPost[] {
     const shuffled = [...this.postsArr].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 4);}
+    
 
 }
