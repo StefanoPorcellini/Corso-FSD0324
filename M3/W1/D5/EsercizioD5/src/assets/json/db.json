@@ -1,0 +1,56 @@
+[
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://download.logo.wine/logo/Fiat_Automobiles/Fiat_Automobiles-Logo.wine.png",
+        "model": "500L",
+        "modelImage": "https://stellantis3.dam-broadcast.com/medias/domain12808/media102643/793114-jd4g5xx3de-whr.jpg",
+        "year": 2015,
+        "price": 7500,
+        "available": false
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://download.logo.wine/logo/Fiat_Automobiles/Fiat_Automobiles-Logo.wine.png",
+        "model": "500 Abarth",
+        "modelImage": "https://immagini.alvolante.it/sites/default/files/styles/anteprima_lunghezza_640_jpg/public/serie_auto_galleria/2016/07/abarth_695_competition_ant.png?itok=jO3l9xJ9",
+        "year": 2010,
+        "price": 3500,
+        "available": true
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://download.logo.wine/logo/Ford_Motor_Company/Ford_Motor_Company-Logo.wine.png",
+        "model": "Taurus",
+        "modelImage": "https://www.motortrend.com/uploads/sites/10/2019/06/2019-ford-taurus-sho-sedan-angular-front.png",
+        "year": 2009,
+        "price": 5200,
+        "available": false
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://download.logo.wine/logo/Ford_Motor_Company/Ford_Motor_Company-Logo.wine.png",
+        "model": "Focus",
+        "modelImage": "https://immagini.alvolante.it/sites/default/files/styles/image_gallery_big/public/serie_auto_galleria/2018/04/ford_focus_ant_0.png?itok=-19A6_ZZ",
+        "year": 2014,
+        "price": 9700,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://download.logo.wine/logo/Audi/Audi-Logo.wine.png",
+        "model": "A3",
+        "modelImage": "https://immagini.alvolante.it/sites/default/files/styles/image_gallery_big/public/serie_auto_galleria/2024/03/audi_a3_allstreet_ant.png?itok=-L7t12Ll",
+        "year": 2012,
+        "price": 4300,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://download.logo.wine/logo/Audi/Audi-Logo.wine.png",
+        "model": "Q7",
+        "modelImage": "https://ofertyspecjalneaudi.pl/uploaded/20240201154349/q7-840x437.png",
+        "year": 2020,
+        "price": 41700,
+        "available": false
+    }
+]
