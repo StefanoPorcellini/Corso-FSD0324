@@ -1,9 +1,9 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-12 col-md-8">
+    <div class="col-12 col-md-9">
       <div class="bg-black rounded p-2 my-3 text-white text-center">
         <img src="../../../assets/img/logo.svg" alt="logo">
-        <p class="fs-5 fst-italic">best car seller</p>
+        <h2 class="fst-italic">best car seller</h2>
       </div>
       <hr>
       <div class="text-center">
@@ -15,7 +15,7 @@
         </div>
       </div>
       <hr>
-      <div class="row gap-3 d-flex justify-content-center">
+      <div class="row gap-3 d-flex justify-content-center my-4">
         <div class="card col-6 p-2" *ngIf="randomCars.length>0">
           <img src="{{ randomCars[0].modelImage }}" class="card-img-top" alt="car img">
           <div class="card-body">

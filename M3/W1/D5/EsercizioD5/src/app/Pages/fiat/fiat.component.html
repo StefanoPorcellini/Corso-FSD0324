@@ -1,1 +1,21 @@
-<p>fiat works!</p>
+<div class="container d-flex flex-column align-items-center my-5">
+  <h2 class="fst-italic">Le nostre auto a marchio</h2>
+  <img src="{{ fiatLogoURL }}" alt="logo fiat">
+  <hr>
+  <div *ngIf="brandFiltered.length>0" class="row gap-3 d-flex justify-content-center">
+    <div class="card col-6 p-2" *ngFor="let p of brandFiltered">
+      <img src="{{ p.modelImage }}" class="card-img-top" alt="car img">
+      <div class="card-body">
+        <h5 class="card-title">{{ p.brand }} {{ p.model }}</h5>
+        <p class="card-text">{{ p.year }}</p>
+        <p class="card-text">€ {{ p.price }}</p>
+        <p class="card-text">Disponibile in pronta consegna:
+          <span class="px-3 py-2 rounded-pill text-white fw-bolder" [ngClass]="{'bg-success': p.available,
+                          'bg-danger': !p.available}">
+            {{ (p.available)? 'SI' : 'NO' }}
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
