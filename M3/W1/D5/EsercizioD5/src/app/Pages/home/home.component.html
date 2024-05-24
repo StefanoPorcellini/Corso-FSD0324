@@ -16,7 +16,7 @@
       </div>
       <hr>
       <div class="row gap-3 d-flex justify-content-center my-4" *ngIf="randomCars.length>0">
-        <div class="card col-6 p-2" *ngFor="let p of randomCars">
+        <div class="card col-6 p-4 shadow" *ngFor="let p of randomCars">
           <img src="{{ p.modelImage }}" class="card-img-top" alt="car img">
           <div class="card-body">
             <h5 class="card-title">{{ p.brand }} {{ p.model }}</h5>
@@ -30,7 +30,7 @@
               </span>
             </p>
             <a [routerLink]='goToLowerCase(p.brand)'
-             class="btn btn-primary">Controlla anche le altre auto del marchio {{ p.brand }}</a>
+             class="btn btn-outline-dark">Controlla anche le altre auto del marchio <span class="fw-bolder fst-italic fs-5">{{ p.brand }}</span></a>
           </div>
         </div>
       </div>

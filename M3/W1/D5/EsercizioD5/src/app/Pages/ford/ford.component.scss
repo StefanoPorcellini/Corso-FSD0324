@@ -1,4 +1,4 @@
-img {
+#logoBrand {
   width: 50%;
 }
 
@@ -7,13 +7,16 @@ h2 {
 }
 
 .card {
-  width: 600px;
+  width: 500px;
 }
 
-.card img{
-  width: 100%;
-}
 
 .container{
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-img-top {
+  width: auto;
+  max-height: 250px;
+  object-fit: contain;
 }
