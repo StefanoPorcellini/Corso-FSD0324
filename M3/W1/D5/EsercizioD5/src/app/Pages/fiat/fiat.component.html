@@ -1,4 +1,4 @@
-<div class="container d-flex flex-column align-items-center my-5">
+<div class="container d-flex flex-column align-items-center py-5">
   <h2 class="fst-italic">Le nostre auto a marchio</h2>
   <img src="{{ fiatLogoURL }}" alt="logo fiat">
   <hr>
@@ -8,7 +8,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ p.brand }} {{ p.model }}</h5>
         <p class="card-text">{{ p.year }}</p>
-        <p class="card-text">€ {{ p.price }}</p>
+        <h3 class="card-text">€ {{ p.price }}</h3>
         <p class="card-text">Disponibile in pronta consegna:
           <span class="px-3 py-2 rounded-pill text-white fw-bolder" [ngClass]="{'bg-success': p.available,
                           'bg-danger': !p.available}">

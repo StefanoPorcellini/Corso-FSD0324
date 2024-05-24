@@ -15,39 +15,22 @@
         </div>
       </div>
       <hr>
-      <div class="row gap-3 d-flex justify-content-center my-4">
-        <div class="card col-6 p-2" *ngIf="randomCars.length>0">
-          <img src="{{ randomCars[0].modelImage }}" class="card-img-top" alt="car img">
+      <div class="row gap-3 d-flex justify-content-center my-4" *ngIf="randomCars.length>0">
+        <div class="card col-6 p-2" *ngFor="let p of randomCars">
+          <img src="{{ p.modelImage }}" class="card-img-top" alt="car img">
           <div class="card-body">
-            <h5 class="card-title">{{ randomCars[0].brand }} {{ randomCars[0].model }}</h5>
-            <p class="card-text">{{ randomCars[0].year }}</p>
-            <p class="card-text">€ {{ randomCars[0].price }}</p>
+            <h5 class="card-title">{{ p.brand }} {{ p.model }}</h5>
+            <p class="card-text">{{ p.year }}</p>
+            <p class="card-text">€ {{ p.price }}</p>
             <p class="card-text">Disponibile in pronta consegna:
               <span class="px-3 py-2 rounded-pill text-white fw-bolder"
-              [ngClass]="{'bg-success': randomCars[0].available,
-                          'bg-danger': !randomCars[0].available}">
-                          {{ (randomCars[0].available)? 'SI' : 'NO' }}
+              [ngClass]="{'bg-success': p.available,
+                          'bg-danger': !p.available}">
+                          {{ (p.available)? 'SI' : 'NO' }}
               </span>
             </p>
-            <a [routerLink]='goToLowerCase(randomCars[0].brand)'
-             class="btn btn-primary">Controlla anche le altre auto del marchio {{ randomCars[0].brand }}</a>
-          </div>
-        </div>
-        <div class="card col-6" *ngIf="randomCars.length>0">
-          <img src="{{ randomCars[1].modelImage }}" class="card-img-top" alt="car img">
-          <div class="card-body">
-            <h5 class="card-title">{{ randomCars[1].brand }} {{ randomCars[1].model }}</h5>
-            <p class="card-text">{{ randomCars[1].year }}</p>
-            <p class="card-text">€ {{ randomCars[1].price }}</p>
-            <p class="card-text">Disponibile in pronta consegna:
-              <span class="px-3 py-2 rounded-pill text-white fw-bolder"
-              [ngClass]="{'bg-success': randomCars[1].available,
-                          'bg-danger': !randomCars[1].available}">
-                          {{ (randomCars[1].available)? 'SI' : 'NO' }}
-              </span>
-            </p>
-            <a [routerLink]='goToLowerCase(randomCars[1].brand)'
-             class="btn btn-primary">Controlla anche le altre auto del marchio {{ randomCars[1].brand }}</a>
+            <a [routerLink]='goToLowerCase(p.brand)'
+             class="btn btn-primary">Controlla anche le altre auto del marchio {{ p.brand }}</a>
           </div>
         </div>
       </div>
