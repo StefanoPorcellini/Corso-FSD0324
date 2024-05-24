@@ -6,8 +6,8 @@
     <div class="card col-12 col-md-6 p-2 shadow" *ngFor="let p of brandFiltered">
       <img src="{{ p.modelImage }}" class="card-img-top" alt="car img">
       <div class="card-body">
-        <h5 class="card-title">{{ p.brand }} {{ p.model }}</h5>
-        <p class="card-text">{{ p.year }}</p>
+        <h2 class="card-title">{{ p.brand }} {{ p.model }}</h2>
+        <p class="card-text fs-5">{{ p.year }}</p>
         <h3 class="card-text">€ {{ p.price }}</h3>
         <p class="card-text">Disponibile in pronta consegna:
           <span class="px-3 py-2 rounded-pill text-white fw-bolder" [ngClass]="{'bg-success': p.available,
