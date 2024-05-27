@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { iPost } from '../../Models/i-post';
 import { iDataBase } from '../../Models/i-data-base';
 import { AllPostService } from '../../Services/all-post.service';
+import { SinglePostComponent } from '../../Components/single-post/single-post.component';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ import { AllPostService } from '../../Services/all-post.service';
 })
 export class HomeComponent {
 
-  postsArr:iPost[] = []
+  postsArr:iPost[] = this.postSvc.allPost
   firstPost!:iPost;
   randomPosts:iPost[] = []
 
@@ -18,10 +19,12 @@ export class HomeComponent {
     private postSvc:AllPostService
   ){}
 
+  @ViewChild("singlePost") singlePost!:SinglePostComponent
+
+
 
   ngOnInit(){
 
-    this.postsArr = this.postSvc.allPost
 
 
       let firstPost = this.getFirstPost()

@@ -9,7 +9,7 @@ import { AllPostService } from '../../Services/all-post.service';
 })
 export class SinglePostComponent {
 
-  postArr:iPost[]=[]
+  postsArr:iPost[]=[]
   status:boolean = false
 
   constructor(
@@ -18,7 +18,7 @@ export class SinglePostComponent {
 
   ngOnInit(){
 
-    this.postArr = this.postSvc.allPost
+    this.postsArr = this.postSvc.allPost
   }
 
   changeStatus(){
