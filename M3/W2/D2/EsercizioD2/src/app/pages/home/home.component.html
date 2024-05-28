@@ -1,0 +1,55 @@
+<div class="container-fluid bg-info-subtle mt-4 p-2 text-center">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-primary fw-bold">Filtra i post per tag:</h2>
+      <span class="badge text-black fs-5 p-4"
+            *ngFor="let t of tags">{{ t | uppercase }}</span>
+    </div>
+  </div>
+</div>
+
+<h2 class="py-3 text-primary ">Post in evidenza</h2>
+
+<div class="card mb-3" *ngIf="postsArr.length>0">
+  <div class="card-body d-flex flex-column align-items-md-start">
+    <h5 class="card-title">{{ firstPost.title }}</h5>
+    <p class="card-text">{{ firstPost.body }}</p>
+    <p class="fst-italic">Tags: {{ firstPost.tags }}</p>
+    <button
+    class="btn btn-primary text-white align-self-sm-end" [routerLink]="['/post-detail', firstPost.id]"
+    >Dettagli</button>
+  </div>
+</div>
+
+<h4 class="py-3 text-info">Potrebbero piacerti questi post:</h4>
+
+<div class="row justify-content-between">
+  <div class="col-12 col-md-6 col-lg-3 mb-2" *ngFor="let p of randomPosts">
+    <div class="card" >
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title pb-3">{{ p.title }}</h5>
+        <p class="card-text">{{ p.body }}</p>
+        <p class="fst-italic">Tags: {{ p.tags }}</p>
+        <button class="btn btn-info text-white align-self-sm-end"
+        [routerLink]="['/post-detail', p.id]">Dettagli</button>
+      </div>
+    </div>
+</div>
+
+<h4 class="py-3 text-primary">Tutti i post:</h4>
+
+<div class="row">
+  <app-single-post
+  #singlePost
+  class="col-12 col-md-6 col-lg-3 my-2"
+  *ngFor="let p of postsArr"
+  [post]="p">
+  <div class="d-flex flex-column">
+      <input  type="text"
+              class="card-title form-control"
+              [(ngModel)]="p.title">
+      <button class="btn btn-success" (click)="saveForm()">SALVA</button>
+  </div>
+</app-single-post>
+
+</div>

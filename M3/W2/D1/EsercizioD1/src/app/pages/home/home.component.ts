@@ -19,7 +19,6 @@ export class HomeComponent {
     private postSvc:AllPostService
   ){}
 
-  @ViewChild("singlePost") singlePost!:SinglePostComponent
 
 
 
