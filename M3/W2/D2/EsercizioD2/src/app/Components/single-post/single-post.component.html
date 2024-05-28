@@ -1,13 +1,16 @@
 <div>
-  <div class="card" [ngClass]="{'border-primary': post.active}">
+  <div class="card"
+   [ngClass]="{'border-primary': post.active,
+               'border-warning': !post.active
+   }">
     <div class="card-body d-flex flex-column">
       <h5 class="card-title pb-3">{{ post.title }}</h5>
       <p class="card-text">{{ post.body }}</p>
-      <p class="fst-italic">Tags:
+      <p class="fw-bold">Tags:
       </p>
       <p appRandomColor class="badge"
        *ngFor="let t of post.tags"> {{ t | uppercase }}</p>
-      <div class="d-flex ju">
+      <div class="d-flex justify-content-between">
         <button class="btn btn-info text-white align-self-sm-end"
           [routerLink]="['/post-detail', post.id]">Dettagli</button>
         <button class="btn btn-warning text-white align-self-sm-end mt-2"

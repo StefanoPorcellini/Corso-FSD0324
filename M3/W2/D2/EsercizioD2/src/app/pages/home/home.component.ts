@@ -14,6 +14,8 @@ export class HomeComponent {
   firstPost!: iPost
   randomPosts: iPost[] = []
   tags:string[] = []
+  selectedTag!:string
+  filteredTag!:string
 
   @ViewChild('singlePost') singlePost!: SinglePostComponent;
 
@@ -38,6 +40,9 @@ export class HomeComponent {
     alert('Titolo salvato');
   }
 
-
+  filterTag(tag:string){
+    this.filteredTag = tag
+    this.postsArr = this.postSvc.getTagForFilter(this.filteredTag)
+  }
 
 }

@@ -277,4 +277,8 @@ export class AllPostService {
     })
     return Array.from(tagsSet)
   }
+
+  getTagForFilter(tag:string){
+    return this.allPost.filter(post=> post.tags.includes(tag))
+  }
 }

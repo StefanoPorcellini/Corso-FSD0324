@@ -1,9 +1,19 @@
 <h2 class="py-3 text-primary ">Post Selezionato</h2>
 
-<div class="card mb-3" *ngIf="currentPost">
+<div class="card mb-3" *ngIf="currentPost"
+[ngClass]="{'border-primary': currentPost.active,
+               'border-warning': !currentPost.active
+   }">
   <div class="card-body d-flex flex-column align-items-md-start">
     <h5 class="card-title">{{ currentPost.title }}</h5>
     <p class="card-text">{{ currentPost.body }}</p>
-    <p class="fst-italic">Tags: {{ currentPost.tags }}</p>
+      <p class="fw-bold">Tags:
+      </p>
+      <div>
+        <p appRandomColor class="badge p-2 mx-2"
+        *ngFor="let t of currentPost.tags"> {{ t | uppercase }}</p>
+      </div>
+      <button class="btn btn-primary text-white align-self-sm-end"
+      routerLink="/">Torna alla Home</button>
     </div>
 </div>
