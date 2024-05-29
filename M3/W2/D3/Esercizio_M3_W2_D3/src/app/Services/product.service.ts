@@ -19,8 +19,8 @@ export class ProductService {
     return this.http.get<iDummyJson>(this.apiUrl).pipe(map(i => i.products))
   }
 
-  filterById(array:iProducts[], id:number){
-    return array.filter(product => product.id === id)
+  findId(array:iProducts[], id:number): iProducts | undefined{
+    return array.find(product => product.id === id)
   }
 
 }

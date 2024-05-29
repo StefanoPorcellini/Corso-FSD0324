@@ -23,7 +23,8 @@ export class CardsComponent {
   @Input() product!:iProducts
 
   addToPref(id:number){
-    let pref = this.productSvc.filterById(this.allProducts, id)
+    let pref = this.productSvc.findId(this.allProducts, id)
+    if (pref)
     this.preference.push(pref)
 
     console.log('preferiti:', this.preference);
