@@ -24,10 +24,13 @@ console.log('allPhotos= ', this.allPhotos);
 
   }
 
+disableLike:boolean = false
 
   getLikeBtn(id:number){
     this.photoSvc.getLike(id)
-  this.likeCounter = this.photoSvc.likeCounterLength}
+  this.likeCounter = this.photoSvc.likeCounterLength
+    this.disableLike=!this.disableLike
+}
 
 
 }
