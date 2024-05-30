@@ -9,14 +9,10 @@ import { iProducts } from '../../Models/i-products';
 })
 export class PrefComponent {
 
-  allProducts:iProducts[] = []
+  prefArray:iProducts[] = this.productSvc.prefArray
 
   constructor(private productSvc: ProductService ){}
 
-  ngOnInit(){
-    this.productSvc.getAllProduct().subscribe
-    (product =>this.allProducts = product)
-  }
 
 
 }

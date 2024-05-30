@@ -1,1 +1,12 @@
-<p>pref works!</p>
+<div class="container">
+  <div class="row">
+    <app-cards class="col-12 col-md-6 col-lg-3 my-2" *ngFor="let p of prefArray" [product]="p" #cardButton>
+      <div class="d-flex justify-content-between gap-2">
+        <button class="btn btn-danger text-white align-self-sm-end p-1"
+               >Rimuovi dai preferiti</button>
+        <button class="btn btn-info text-white align-self-sm-end p-1"
+          [routerLink]="">Aggiungi al carrello</button>
+      </div>
+    </app-cards>
+  </div>
+</div>

@@ -8,12 +8,7 @@
       <p class="badge text-black bg-secondary-subtle"
        *ngFor="let t of product.tags">{{ t | uppercase }}</p>
        <h4 class="card-text text-primary">{{ product.price | currency: 'EUR' }}</h4>
-      <div class="d-flex justify-content-between gap-2">
-        <button class="btn btn-warning text-white align-self-sm-end p-1" (click)="addToPref(product.id)"
-               >Aggiungi ai preferiti</button>
-        <button class="btn btn-info text-white align-self-sm-end p-1"
-          [routerLink]="">Aggiungi al carrello</button>
-      </div>
+       <ng-content></ng-content>
     </div>
   </div>
 </div>

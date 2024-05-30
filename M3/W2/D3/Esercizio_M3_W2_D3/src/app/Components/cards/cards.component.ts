@@ -9,7 +9,7 @@ import { ProductService } from '../../Services/product.service';
 })
 export class CardsComponent {
 
-  preference:iProducts[] = []
+ 
   allProducts:iProducts[] = []
 
 
@@ -22,13 +22,6 @@ export class CardsComponent {
 
   @Input() product!:iProducts
 
-  addToPref(id:number){
-    let pref = this.productSvc.findId(this.allProducts, id)
-    if (pref)
-    this.preference.push(pref)
 
-    console.log('preferiti:', this.preference);
-
-  }
 
 }
