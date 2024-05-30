@@ -9,5 +9,9 @@ import { PhotoService } from '../photo.service';
 })
 export class CardComponent {
 
+deletePhoto:boolean=true
+
+deletePhotoBtn(){this.deletePhoto=!this.deletePhoto}
+
 @Input() photo!:iPhoto
 }

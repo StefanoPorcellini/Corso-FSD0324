@@ -21,5 +21,8 @@ export class PhotoService {
     );
   }
 
-  getLike() {}
-}
+  getLike(id:number) {}
+
+
+
+  }
