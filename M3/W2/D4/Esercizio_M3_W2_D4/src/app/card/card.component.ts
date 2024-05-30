@@ -14,4 +14,10 @@ deletePhoto:boolean=true
 deletePhotoBtn(){this.deletePhoto=!this.deletePhoto}
 
 @Input() photo!:iPhoto
+
+constructor(private photoSvc:PhotoService) {}
+
+
+
+
 }

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, catchError, throwError } from 'rxjs';
+import { BehaviorSubject, Observable, catchError, throwError } from 'rxjs';
 import { iPhoto } from './photo';
 
 @Injectable({
@@ -10,6 +10,10 @@ export class PhotoService {
   apiUrl: string = 'https://jsonplaceholder.typicode.com/photos';
 
   likeCounter: number[] = [];
+  likeCounterLength!:number
+
+  likeSubject = new BehaviorSubject<number[]>([])
+  like$ = this.likeSubject.asObservable()
 
   constructor(private http: HttpClient) {}
 
@@ -21,7 +25,11 @@ export class PhotoService {
     );
   }
 
-  getLike(id:number) {}
+  getLike(id:number) {
+    this.likeCounter.push(id)
+    this.likeSubject.next(this.likeCounter)
+    this.likeCounterLength = this.likeCounter.length
+  }
 
 
 

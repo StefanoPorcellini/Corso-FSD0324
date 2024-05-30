@@ -1,8 +1,9 @@
 <h2 class="my-4 text-center">Contatore di Like = <span>{{ likeCounter }}</span></h2>
 <div class="container">
   <div class="row gy-3">
-      <app-card class="col-6" *ngFor="let p of allPhotos" [photo]="p">
-
+      <app-card class="col-6" *ngFor="let p of allPhotos" [photo]="p" #photoCard>
+          <button (click)="getLikeBtn(p.id)"
+           class="btn btn-primary"><i class="bi bi-hand-thumbs-up-fill"></i></button>
       </app-card>
 
   </div>
