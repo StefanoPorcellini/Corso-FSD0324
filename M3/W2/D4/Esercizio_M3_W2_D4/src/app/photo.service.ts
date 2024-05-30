@@ -4,20 +4,22 @@ import { Observable, catchError, throwError } from 'rxjs';
 import { iPhoto } from './photo';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PhotoService {
+  apiUrl: string = 'https://jsonplaceholder.typicode.com/photos';
 
-   apiUrl:string = 'https://jsonplaceholder.typicode.com/photos';
+  likeCounter: number[] = [];
 
+  constructor(private http: HttpClient) {}
 
-  constructor(private http:HttpClient) { }
-
-  getPhotos():Observable<iPhoto[]>{
-    return this.http.get<iPhoto[]>(this.apiUrl).pipe(catchError(error => {
-      return throwError((()=> new Error('ERRORE')))
-    }))
+  getPhotos(): Observable<iPhoto[]> {
+    return this.http.get<iPhoto[]>(this.apiUrl).pipe(
+      catchError((error) => {
+        return throwError(() => console.error('ERRORE NELLA CHIAMATA GET'));
+      })
+    );
   }
 
-  getLike(){}
+  getLike() {}
 }
