@@ -1,0 +1,11 @@
+<div *ngFor="let t of compleatedTodos" >
+    <div class="alert" role="alert" *ngIf="t.completed" [ngClass]="{'alert-success': t.completed, 'alert-danger': !t.completed}" >
+      <div class="d-flex gap-3 align-item-start">
+        <input type="checkbox" [(ngModel)]="t.completed">
+        <div>
+          <h2>{{ t.todo }}</h2>
+          <p>Autore: {{ t.userFirstName }} {{ t.userLastName }}</p>
+        </div>
+      </div>
+    </div>
+</div>

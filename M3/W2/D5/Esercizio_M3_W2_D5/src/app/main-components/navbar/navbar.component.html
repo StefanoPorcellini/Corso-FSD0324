@@ -1,0 +1,25 @@
+<nav class="navbar bg-info-subtle navbar-expand-lg">
+  <div class="container-fluid">
+    <h2 class="mb-0 me-4">Task List</h2>
+    <button (click)="show = !show" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{'show':show}">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-3">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" routerLink="/" routerLinkActive="active">All Task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning fw-bold" routerLink="/completed" routerLinkActive="active">Comleated Task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary fw-bold" routerLink="/user" routerLinkActive="active">Users</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="text" placeholder="cerca autore" aria-label="Search" >
+      </form>
+    </div>
+  </div>
+</nav>
