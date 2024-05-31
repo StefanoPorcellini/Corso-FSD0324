@@ -1,11 +1,26 @@
-<div *ngFor="let t of compleatedTodos" >
-    <div class="alert" role="alert" *ngIf="t.completed" [ngClass]="{'alert-success': t.completed, 'alert-danger': !t.completed}" >
-      <div class="d-flex gap-3 align-item-start">
-        <input type="checkbox" [(ngModel)]="t.completed">
-        <div>
-          <h2>{{ t.todo }}</h2>
-          <p>Autore: {{ t.userFirstName }} {{ t.userLastName }}</p>
+<div class="container mt-5">
+  <div class="row row-cols-2 row-cols-lg-5 gy-3">
+    <div class="col" *ngFor="let t of compleatedTodos">
+      <div *ngIf="t.completed">
+          <div class="card shadow" [ngClass]="{'border-success': t.completed, 'border-danger': !t.completed}">
+            <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <div class="form-check form-switch mb-2">
+                <input type="checkbox" role="switch" class="form-check-input" [(ngModel)]="t.completed">
+                <h5>Change task</h5>
+              </div>
+              <div>
+                <h4 class="card-title">{{ t.todo }}</h4>
+                <p class="card-text ">Assignet to: {{ getUserById(t.userId)?.firstName }} {{ getUserById(t.userId)?.lastName }}</p>
+              </div>
+            </div>
+            <div>
+              <img *ngIf="t.completed" src="../../../assets/img/completed.svg" alt="img completed">
+              <img *ngIf="!t.completed" src="../../../assets/img/wip.svg" alt="img completed">
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 </div>
