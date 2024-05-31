@@ -4,15 +4,15 @@
       <div class="card mb-3" *ngFor="let u of allUsers">
         <div class="row g-0">
           <div class="col-md-4">
-            <div class="card bg-primary-subtle m-2">
+            <div class="card m-2" appRandomColor>
               <img [src]="u.image" class="img-fluid rounded-start" alt="user avatar">
             </div>
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">{{ u.firstName }} {{ u.lastName }}</h5>
-              <p class="card-text">{{ u.title }}</p>
-              <p class="card-text">{{ u.email }}</p>
+              <h1 class="card-title">{{ u.firstName }} {{ u.lastName }}</h1>
+              <p class="card-text fs-3 mb-1">{{ u.title }}</p>
+              <p class="card-text fs-4 fst-italic">{{ u.email }}</p>
               <div class="card p-3" >
                 <div *ngFor="let t of filterTodoByUserId(u.id)">
                   <div class="card my-2 p-2 shadow" [ngClass]="{'border-success': t.completed, 'border-danger': !t.completed}">

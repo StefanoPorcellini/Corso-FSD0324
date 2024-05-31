@@ -932,5 +932,5 @@ export class TodoService {
     return this.todoArray.filter(t => t.completed)
   }
 
-
+ 
 }

@@ -1,5 +1,5 @@
 <div class="container mt-5">
-  <div class="row row-cols-2 row-cols-lg-5 gy-3">
+  <div class="row row-cols-2 row-cols-lg-4 gy-3">
     <div class="col" *ngFor="let t of compleatedTodos">
       <div *ngIf="t.completed">
           <div class="card shadow" [ngClass]="{'border-success': t.completed, 'border-danger': !t.completed}">

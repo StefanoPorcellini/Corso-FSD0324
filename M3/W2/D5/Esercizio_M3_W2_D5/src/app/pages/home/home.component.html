@@ -10,10 +10,10 @@
             </div>
             <div>
               <h4 class="card-title">{{ t.todo }}</h4>
-              <p class="card-text ">Assignet to: {{ getUserById(t.userId)?.firstName }} {{ getUserById(t.userId)?.lastName }}</p>
+              <p class="card-text fs-3">Assignet to: {{ getUserById(t.userId)?.firstName }} {{ getUserById(t.userId)?.lastName }}</p>
             </div>
           </div>
-          <div>
+          <div class="d-flex justify-content-end">
             <img *ngIf="t.completed" src="../../../assets/img/completed.svg" alt="img completed">
             <img *ngIf="!t.completed" src="../../../assets/img/wip.svg" alt="img completed">
           </div>

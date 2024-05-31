@@ -14,6 +14,7 @@ export class HomeComponent {
   allTodos:iTodo[] = []
 
 
+
   constructor(private todoSvc:TodoService, private userSvc:UserService){}
 
   ngOnInit(){
@@ -23,4 +24,6 @@ export class HomeComponent {
   getUserById(userId:number){
   return this.userSvc.getUserId(userId)  }
 
-}
+  }
+
+

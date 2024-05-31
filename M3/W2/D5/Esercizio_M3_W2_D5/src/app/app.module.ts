@@ -8,6 +8,7 @@ import { CompletedComponent } from './pages/completed/completed.component';
 import { UserComponent } from './pages/user/user.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './main-components/navbar/navbar.component';
+import { RandomColorDirective } from './direttive/random-color.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NavbarComponent } from './main-components/navbar/navbar.component';
     HomeComponent,
     CompletedComponent,
     UserComponent,
-    NavbarComponent
+    NavbarComponent,
+    RandomColorDirective
   ],
   imports: [
     BrowserModule,

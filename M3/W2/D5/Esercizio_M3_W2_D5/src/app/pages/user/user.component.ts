@@ -13,6 +13,8 @@ import { filter } from 'rxjs';
 export class UserComponent {
 
   allUsers:iUser[] = []
+  randomColor:string = ""
+
 
   constructor(private todoSvc:TodoService, private userSvc:UserService){}
 
