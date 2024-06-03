@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../Services/auth.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,5 +10,21 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
 
   show:boolean = false;
+
+  checkLogin:boolean = false
+
+  constructor(private authSvc:AuthService){}
+
+  ngOnInit(){
+
+
+  }
+
+  login(){
+    this.authSvc.login()
+  }
+
+
+  logout(){}
 
 }

@@ -28,6 +28,8 @@ const routes: Routes = [
     path:'post-detail/:id',
     component: PostDetailComponent
   },
+
+  { path: 'login', loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule) },
   {
     path:'**',
     component: Page404Component

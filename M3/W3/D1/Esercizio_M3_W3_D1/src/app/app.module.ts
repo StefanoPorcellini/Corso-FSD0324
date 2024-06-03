@@ -7,7 +7,7 @@ import { NavbarComponent } from './main-component/navbar/navbar.component';
 import { PostDetailComponent } from './pages/post-detail/post-detail.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { FormsModule } from '@angular/forms';
-import { RandomColorDirective } from './Directives/random-color.directive';
+import { RandomColorDirective } from './shared/Directives/random-color.directive';
 import { HomeModule } from './pages/home/home.module';
 import { ActivePostModule } from './pages/active-post/active-post.module';
 import { InactivePostModule } from './pages/inactive-post/inactive-post.module';
@@ -18,7 +18,6 @@ import { PostDetailModule } from './pages/post-detail/post-detail.module';
   declarations: [
     AppComponent,
     NavbarComponent,
-    RandomColorDirective
   ],
   imports: [
     BrowserModule,

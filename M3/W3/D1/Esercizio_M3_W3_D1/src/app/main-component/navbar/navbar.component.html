@@ -20,6 +20,8 @@
           routerLink="/inactive-post" routerLinkActive="active" >Post inattivi</a>
         </li>
       </ul>
+      <button *ngIf="!checkLogin" class="btn btn-outline-success me-5" (click)="login()">Login</button>
+      <button *ngIf="checkLogin" class="btn btn-outline-danger me-5" (click)="logout()">Logout</button>
     </div>
   </div>
 </nav>
