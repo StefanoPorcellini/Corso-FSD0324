@@ -6,6 +6,7 @@
         <div class="mb-3">
           <label for="" class="form-label">Nome</label>
           <input type="text" class="form-control" formControlName="nome">
+          <span *ngif="isInvalid('nome')">Attenzione devi inserire il nome</span>
         </div>
         <div class="mb-3">
           <label for="" class="form-label">Cognome</label>
@@ -50,7 +51,7 @@
               <textarea class="form-control" rows="10" formControlName="bio"></textarea>
           </div>
         <button (click)="invia()"
-        type="submit" class="btn btn-primary">Login</button>
+        type="submit" class="btn btn-primary">Registra</button>
       </form>
     </div>
   </div>

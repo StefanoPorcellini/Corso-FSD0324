@@ -24,4 +24,8 @@ invia(){
   this.loginSvc.inviaReg()
 }
 
+isInvalid(fieldName:string){
+  this.loginSvc.isInvalid(fieldName)
+}
+
 }

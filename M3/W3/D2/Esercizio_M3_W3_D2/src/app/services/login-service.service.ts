@@ -17,27 +17,31 @@ export class LoginServiceService {
   user:string = ''
   password:string = ''
 
-login(){ if(this.form.get('user')?.value || this.form.get('password')?.value){
-  Swal.fire({
-    icon: 'error',
-    title: 'Attenzione, user o password errati o inesistenti!',
-  })
-} else
-  if(  this.form.get('user')?.value === this.user
-  && this.form.get('password')?.value === this.password  )
-  {
-    Swal.fire({
-      icon: 'success',
-      title: 'Login effettuato con successo',
-    })
-    this.router.navigate(['/welcome'])
-  }
-  else {
-    Swal.fire({
-      icon: 'error',
-      title: 'Attenzione, user o password errati o inesistenti!',
-    })
-  }
+login(){
+
+  // if(this.form){
+  //   Swal.fire({
+  //     icon: 'error',
+  //     title: 'Attenzione, user o password errati o inesistenti!',
+  //   })
+  //   console.log(this.form);
+  // }
+//  else
+//   if(  this.form.get('user')?.value === this.user
+//   && this.form.get('password')?.value === this.password  )
+//   {
+//     Swal.fire({
+//       icon: 'success',
+//       title: 'Login effettuato con successo',
+//     })
+//     this.router.navigate(['/welcome'])
+//   }
+//   else {
+//     Swal.fire({
+//       icon: 'error',
+//       title: 'Attenzione, user o password errati o inesistenti!',
+//     })
+//   }
 }
 
 
@@ -80,6 +84,11 @@ inviaReg(){
       title: 'Attenzione, inserisci i dati richiesti!',
     })
   }
+}
+
+isInvalid(fieldName:string){
+  const field = this.form.get(fieldName)
+  return field?.invalid && field?.touched
 }
 
 }
