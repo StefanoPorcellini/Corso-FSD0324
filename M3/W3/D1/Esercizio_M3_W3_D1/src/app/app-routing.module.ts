@@ -14,26 +14,22 @@ const routes: Routes = [
   },
   {
     path:'home',
-    component: HomeComponent
-  },
+    loadChildren:()=> import('./pages/home/home-routing.module').then(m=>m.HomeRoutingModule)  },
   {
     path:'active-post',
-    component: ActivePostComponent
-  },
+    loadChildren:()=> import('./pages/active-post/active-post-routing.module').then(m=>m.ActivePostRoutingModule)  },
+
   {
     path:'inactive-post',
-    component: InactivePostComponent
-  },
+    loadChildren:()=> import('./pages/inactive-post/inactive-post-routing.module').then(m=>m.InactivePostRoutingModule)  },
   {
     path:'post-detail/:id',
-    component: PostDetailComponent
-  },
+    loadChildren:()=> import('./pages/post-detail/post-detail-routing.module').then(m=>m.PostDetailRoutingModule)  },
 
   { path: 'login', loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule) },
   {
     path:'**',
-    component: Page404Component
-  },
+    loadChildren:()=> import('./pages/page404/page404-routing.module').then(m=>m.Page404RoutingModule)  },
 ];
 
 @NgModule({
