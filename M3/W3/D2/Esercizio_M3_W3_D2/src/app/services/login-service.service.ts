@@ -14,10 +14,30 @@ export class LoginServiceService {
 
   form!:FormGroup
 
-  user!:string
-  password!:string
+  user:string = ''
+  password:string = ''
 
-login(){
+login(){ if(this.form.get('user')?.value || this.form.get('password')?.value){
+  Swal.fire({
+    icon: 'error',
+    title: 'Attenzione, user o password errati o inesistenti!',
+  })
+} else
+  if(  this.form.get('user')?.value === this.user
+  && this.form.get('password')?.value === this.password  )
+  {
+    Swal.fire({
+      icon: 'success',
+      title: 'Login effettuato con successo',
+    })
+    this.router.navigate(['/welcome'])
+  }
+  else {
+    Swal.fire({
+      icon: 'error',
+      title: 'Attenzione, user o password errati o inesistenti!',
+    })
+  }
 }
 
 
@@ -45,7 +65,7 @@ getForm(){
 inviaReg(){
   console.log('form completo =', this.form,
               'form.value = ',  this.form.value,
-              'nome= ', this.form.value.nome);
+              'nome= ', this.form.get('nome')?.value);
   if(this.form.valid){
   Swal.fire({
     icon: 'success',
