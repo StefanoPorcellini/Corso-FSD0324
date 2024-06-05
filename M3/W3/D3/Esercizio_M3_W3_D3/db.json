@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "mufaxo@mailinator.com",
+      "password": "$2a$10$LF2bhOKKNi0ir9h4jSeU1uynZT2ytRT8BcjzGURhMU/Em.Dyi8I52",
+      "nome": "Fugiat quis molestia",
+      "cognome": "Autem quis provident",
+      "id": 1
+    },
+    {
+      "email": "tozirycu@mailinator.com",
+      "password": "$2a$10$W0GRdny9kE05SsgJTcCnCeP4P/tDtzRp/GSYUVy4UNMY8qVnYw.qC",
+      "nome": "Culpa ex enim accusa",
+      "cognome": "Ut nostrum provident",
+      "id": 2
+    }
+  ]
+}
