@@ -35,7 +35,11 @@ export class AuthService {
 
   register(newUser:Partial<iUser>):Observable<iAuthResponse>{
     return this.http.post<iAuthResponse>(this.registerUrl, newUser)
-    
+    }
 
+  logout():void{
+    this.authSubject.next(null)
+    localStorage.removeItem('accessData')
+    this.router.navigate(['/'])
   }
 }

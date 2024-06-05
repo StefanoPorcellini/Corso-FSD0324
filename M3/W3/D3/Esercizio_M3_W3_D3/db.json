@@ -13,6 +13,13 @@
       "nome": "Culpa ex enim accusa",
       "cognome": "Ut nostrum provident",
       "id": 2
+    },
+    {
+      "email": "vihojok@mailinator.com",
+      "password": "$2a$10$YUYh.yRsSqWnbbv2SrsBOuZSM/kvByAn49hEhuU7sdcClMDJWCyoS",
+      "nome": "Inventore sed fugiat",
+      "cognome": "Ipsam libero ad nisi",
+      "id": 3
     }
   ]
 }
