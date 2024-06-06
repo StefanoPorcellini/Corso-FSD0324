@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "email": "pippo.pallino@ciccio.com",
+      "password": "$2a$10$KWIK0TzGPLlVCkYan/OmDOnq.ZNNYuDX4ANuvGCNC9o5htPrptFPq",
+      "nome": "Pippo",
+      "cognome": "Pallino",
+      "id": 1
+    }
+  ]
+}

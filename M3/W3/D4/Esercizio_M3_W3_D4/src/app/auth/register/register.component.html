@@ -1,0 +1,18 @@
+<div class="container-fluid ">
+  <div class="row d-flex justify-content-center align-items-center vh-100">
+    <div class="col-4 p-5 rounded-5 text-white">
+      <h2 class="mb-4">Inserisci i dati per registrarti:</h2>
+      <form>
+        <input [(ngModel)]="newUser.nome" type="text" class="form-control mb-3" name="nome" placeholder="Inserisci il tuo nome">
+
+        <input [(ngModel)]="newUser.cognome" type="text" class="form-control mb-3" name="cognome" placeholder="Inserisci il tuo cognome">
+
+        <input [(ngModel)]="newUser.email" type="email" class="form-control mb-3" name="email" placeholder="Inserisci la tua Email">
+
+        <input [(ngModel)]="newUser.password" type="password" class="form-control mb-3" name="password" placeholder="Inserisci la tua password">
+
+    <button (click)="invia()" type="submit" class="btn btn-primary">Registra</button>
+    </form>
+  </div>
+</div>
+</div>
