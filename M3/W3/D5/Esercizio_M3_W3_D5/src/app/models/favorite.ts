@@ -1,2 +1,6 @@
-export interface Favorite {
+import { iMovie } from "./movie"
+
+export interface iFavorite {
+  userId:number
+  movie:iMovie
 }
