@@ -3,7 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule) },
-  { path: 'movie', loadChildren: () => import('./pages/movie/movie.module').then(m => m.MovieModule) }];
+  { path: 'movie', loadChildren: () => import('./pages/movie/movie.module').then(m => m.MovieModule) },
+  {path: '**', redirectTo: '/login'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

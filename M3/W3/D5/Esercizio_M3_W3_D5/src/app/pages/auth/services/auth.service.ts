@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { iUser } from '../../../models/user';
 import { environment } from '../../../../environments/environment.development';
-import { BehaviorSubject, Observable, tap } from 'rxjs';
+import { BehaviorSubject, Observable, map, tap } from 'rxjs';
 import { iAuthResponse } from '../../../models/auth-response';
 import { iAuthData } from '../../../models/auth-data';
 
@@ -18,6 +18,11 @@ export class AuthService {
   authSubject = new BehaviorSubject<null | iUser>(null)
 
   user$=this.authSubject.asObservable()
+  syncIsLoggedIn:boolean = false
+
+  isLoggedIn$ = this.user$.pipe(
+    map(user => !!user),
+    tap(user => this.syncIsLoggedIn = user))
 
   constructor(
     private http:HttpClient,
