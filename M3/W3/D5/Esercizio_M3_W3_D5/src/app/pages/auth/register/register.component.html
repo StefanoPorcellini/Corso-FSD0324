@@ -1,3 +1,4 @@
+<div class="container-fluid">
   <div class="row d-flex justify-content-center align-items-center vh-100">
     <div class="col p-5 rounded-5 text-white text-center">
       <img src="../../../../assets/img/logo..svg" alt="logo">
@@ -11,24 +12,21 @@
           <label for="" class="form-label">Cognome</label>
           <input type="text" class="form-control mx-auto" formControlName="cognome">
         </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Email</label>
-            <input type="email" class="form-control mx-auto" formControlName="email">
-          </div>
-            <div class="mb-3 ">
-              <label for="" class="form-label">Password</label>
-              <input type="password" class="form-control mx-auto" formControlName="password">
-            </div>
-            <div class="mb-3 ">
-              <label for="" class="form-label">Conferma Password</label>
-              <input type="password" class="form-control mx-auto" formControlName="confPassword">
-            </div>
-        <button (click)="submitForm()"
-        type="submit" class="btn btn-success me-5">Registrati</button>
-        <button (click)="back()"
-        type="submit" class="btn btn-primary">Torna Indietro</button>
+        <div class="mb-3">
+          <label for="" class="form-label">Email</label>
+          <input type="email" class="form-control mx-auto" formControlName="email">
+        </div>
+        <div class="mb-3 ">
+          <label for="" class="form-label">Password</label>
+          <input type="password" class="form-control mx-auto" formControlName="password">
+        </div>
+        <div class="mb-3 ">
+          <label for="" class="form-label">Conferma Password</label>
+          <input type="password" class="form-control mx-auto" formControlName="confPassword">
+        </div>
+        <button (click)="submitForm()" type="submit" class="btn btn-success me-5">Registrati</button>
+        <button (click)="back()" type="submit" class="btn btn-primary">Torna Indietro</button>
       </form>
     </div>
   </div>
-
-
+</div>
