@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef, inject } from '@angular/core';
 import { iMovie } from '../../models/movie';
 import { MovieService } from '../auth/services/movie.service';
 
@@ -9,16 +9,17 @@ import { MovieService } from '../auth/services/movie.service';
 })
 export class MovieComponent {
 
-  constructor(private movieSvc:MovieService){}
+  constructor(private movieSvc:MovieService,){}
 
 movies:iMovie[] = []
 
 
+
 ngOnInit(){
- this.movieSvc.getAll().subscribe(m=>{
-  this.movies = m
- })
-}
+  this.movieSvc.getAll().subscribe(m=>{
+    this.movies = m
+    })
+    }
 
 
 }
