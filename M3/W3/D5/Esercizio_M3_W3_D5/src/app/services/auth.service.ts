@@ -2,11 +2,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
-import { iUser } from '../../../models/user';
-import { environment } from '../../../../environments/environment.development';
+import { iUser } from '../models/user';
+import { environment } from '../../environments/environment.development';
 import { BehaviorSubject, Observable, map, tap } from 'rxjs';
-import { iAuthResponse } from '../../../models/auth-response';
-import { iAuthData } from '../../../models/auth-data';
+import { iAuthResponse } from '../models/auth-response';
+import { iAuthData } from '../models/auth-data';
 
 @Injectable({
   providedIn: 'root'

@@ -5,4 +5,5 @@ export interface iMovie {
   imdbID: string,
   type: string,
   poster: string
+  fav:boolean
 }

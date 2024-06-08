@@ -7,6 +7,14 @@
       "nome": "Pippo",
       "cognome": "Pallino",
       "id": 1
+    },
+    {
+      "email": "ciccio.pluto@pippo.com",
+      "password": "$2a$10$f/EnqNwYVt0aDDO0SmUWmeZ6PjEqbqytx09cql8gFbj.VQ5DeiA7W",
+      "username": "Pluto",
+      "nome": "Ciccio",
+      "cognome": "Pluto",
+      "id": 2
     }
   ],
   "movies-popular": [
@@ -16,7 +24,8 @@
       "year": "2001",
       "imdbID": "tt0120737",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 2,
@@ -24,7 +33,8 @@
       "year": "2003",
       "imdbID": "tt0167260",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 3,
@@ -32,7 +42,8 @@
       "year": "2002",
       "imdbID": "tt0167261",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNGE5MzIyNTAtNWFlMC00NDA2LWJiMjItMjc4Yjg1OWM5NzhhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGE5MzIyNTAtNWFlMC00NDA2LWJiMjItMjc4Yjg1OWM5NzhhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 4,
@@ -40,7 +51,8 @@
       "year": "2005",
       "imdbID": "tt0399295",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTYzZWE3MDAtZjZkMi00MzhlLTlhZDUtNmI2Zjg3OWVlZWI0XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTYzZWE3MDAtZjZkMi00MzhlLTlhZDUtNmI2Zjg3OWVlZWI0XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 5,
@@ -48,7 +60,8 @@
       "year": "2005",
       "imdbID": "tt0355702",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNDBhNGJlOTAtM2ExNi00NmEzLWFmZTQtYTZhYTRlNjJjODhmXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDBhNGJlOTAtM2ExNi00NmEzLWFmZTQtYTZhYTRlNjJjODhmXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 6,
@@ -56,7 +69,8 @@
       "year": "1978",
       "imdbID": "tt0077869",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BOGMyNWJhZmYtNGQxYi00Y2ZjLWJmNjktNTgzZWJjOTg4YjM3L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BOGMyNWJhZmYtNGQxYi00Y2ZjLWJmNjktNTgzZWJjOTg4YjM3L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 7,
@@ -64,7 +78,8 @@
       "year": "1990",
       "imdbID": "tt0100054",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BOTI2NTQyODk0M15BMl5BanBnXkFtZTcwNTQ3NDk0NA@@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTI2NTQyODk0M15BMl5BanBnXkFtZTcwNTQ3NDk0NA@@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 8,
@@ -72,7 +87,8 @@
       "year": "2012",
       "imdbID": "tt1731697",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjA2NTc5Njc4MV5BMl5BanBnXkFtZTcwNTYzMTcwOQ@@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjA2NTc5Njc4MV5BMl5BanBnXkFtZTcwNTYzMTcwOQ@@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 9,
@@ -80,7 +96,8 @@
       "year": "1984",
       "imdbID": "tt0087365",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 10,
@@ -88,7 +105,8 @@
       "year": "1963",
       "imdbID": "tt0057261",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BOGEwYTlhMTgtODBlNC00ZjgzLTk1ZmEtNmNkMTEwYTZiM2Y0XkEyXkFqcGdeQXVyMzU4Nzk4MDI@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BOGEwYTlhMTgtODBlNC00ZjgzLTk1ZmEtNmNkMTEwYTZiM2Y0XkEyXkFqcGdeQXVyMzU4Nzk4MDI@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 11,
@@ -96,7 +114,8 @@
       "year": "2012",
       "imdbID": "tt0848228",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 12,
@@ -104,7 +123,8 @@
       "year": "2018",
       "imdbID": "tt4154756",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 13,
@@ -112,7 +132,8 @@
       "year": "2015",
       "imdbID": "tt2395427",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg",
+      "fav": false
     },
     {
       "id": 14,
@@ -120,7 +141,8 @@
       "year": "2019",
       "imdbID": "tt4154796",
       "type": "movie",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg"
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
+      "fav": false
     }
   ],
   "favorites": []

@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
-import { AuthService } from '../../auth/services/auth.service';
-import { MovieService } from '../../auth/services/movie.service';
+import { AuthService } from '../../../services/auth.service';
+import { MovieService } from '../../../services/movie.service';
 import { iMovie } from '../../../models/movie';
 
 @Component({
@@ -15,6 +15,7 @@ constructor(private movieSvc:MovieService) {}
 movies:iMovie[] = []
 
 
+changeFavStatus(){}
 
 ngOnInit(){
   this.movieSvc.getAll().subscribe(m=>{

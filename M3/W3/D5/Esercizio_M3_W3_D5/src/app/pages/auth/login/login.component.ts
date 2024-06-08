@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../services/auth.service';
-import { FormsService } from '../services/forms.service';
+import { AuthService } from '../../../services/auth.service';
+import { FormsService } from '../../../services/forms.service';
 import { iAuthData } from '../../../models/auth-data';
 import { FormGroup } from '@angular/forms';
 
@@ -18,7 +18,7 @@ export class LoginComponent {
 
   userForm!:FormGroup
 
-  
+
 
   ngOnInit(){
     this.userForm = this.formsSvc.getUserLogin()

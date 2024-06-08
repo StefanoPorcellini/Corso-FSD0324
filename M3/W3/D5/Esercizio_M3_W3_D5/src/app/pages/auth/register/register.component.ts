@@ -1,7 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { iUser } from '../../../models/user';
 import { Router } from '@angular/router';
-import { FormsService } from '../services/forms.service';
+import { FormsService } from '../../../services/forms.service';
 import { FormGroup } from '@angular/forms';
 
 @Component({

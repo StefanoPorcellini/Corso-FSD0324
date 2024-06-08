@@ -1,10 +1,10 @@
 import Swal from 'sweetalert2';
 import { Injectable } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { iUser } from '../../../models/user';
+import { iUser } from '../models/user';
 import { Router } from '@angular/router';
 import { AuthService } from './auth.service';
-import { iAuthData } from '../../../models/auth-data';
+import { iAuthData } from '../models/auth-data';
 
 @Injectable({
   providedIn: 'root',

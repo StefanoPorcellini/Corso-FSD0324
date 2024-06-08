@@ -8,8 +8,9 @@
         <p class="card-text">imdID: {{ m.imdbID }}</p>
         <div class="d-flex justify-content-between">
           <button class="btn btn-primary">Vedi Dettagli</button>
-          <button class="btn text-warning text-decoration-none m-0">
-            <i class="bi bi-star m-0 p-0 fs-2"></i>
+          <button (click)="changeFavStatus()" class="btn text-warning text-decoration-none m-0">
+            <i *ngIf="!m.fav" class="bi bi-star m-0 p-0 fs-2"></i>
+            <i *ngIf="m.fav" class="bi bi-star-fill m-0 p-0 fs-2"></i>
           </button>
         </div>
       </div>

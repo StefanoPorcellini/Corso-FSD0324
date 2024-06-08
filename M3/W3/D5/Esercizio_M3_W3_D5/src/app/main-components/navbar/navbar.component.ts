@@ -1,11 +1,10 @@
 import { iAuthResponse } from './../../models/auth-response';
 import { Component, inject, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { AuthService } from '../../pages/auth/services/auth.service';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { FormsService } from '../../pages/auth/services/forms.service';
+import { AuthService } from '../../services/auth.service';
+import { NgbModal, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import { FormsService } from '../../services/forms.service';
 import { iUser } from '../../models/user';
-import { FormGroup } from '@angular/forms';
-import { MovieService } from '../../pages/auth/services/movie.service';
+import { MovieService } from '../../services/movie.service';
 
 
 @Component({
@@ -18,27 +17,34 @@ export class NavbarComponent {
 
   constructor(
     private authSvc:AuthService,
-    private formsSvc:FormsService
+    private movieSvc:MovieService
     ){}
 
   private modalService = inject(NgbModal);
+  private offcanvasService = inject(NgbOffcanvas);
+
 
   openFullscreen(content: TemplateRef<any>) {
 		this.modalService.open(content, { fullscreen: true });
 	}
 
+	openEnd(content: TemplateRef<any>) {
+		this.offcanvasService.open(content, { position: 'end' });
+	}
+
+
   newUser:iAuthResponse|null = this.authSvc.getAccessData();
 
   loggedUser:Partial<iUser>= this.authSvc.getAccessData()?.user as Partial<iUser>
 
-  ngOnInit(){
-    console.log(this.authSvc.getAccessData()?.user);
-
-    // this.loggedUser=localStorage.getItem('accessData')
-  }
+  allUser!:iUser[]
 
 logout(){
   this.authSvc.logout()
+}
+
+ngOnInit(){
+  this.movieSvc.getAllUsers().subscribe(u=> this.allUser=u)
 }
 
 }
