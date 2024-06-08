@@ -18,10 +18,7 @@ export class LoginComponent {
 
   userForm!:FormGroup
 
-  loggedUser:iAuthData = {
-    email: '',
-    password: ''
-  }
+  
 
   ngOnInit(){
     this.userForm = this.formsSvc.getUserLogin()

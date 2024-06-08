@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { iUser } from '../../../models/user';
 import { Router } from '@angular/router';
 import { FormsService } from '../services/forms.service';
@@ -13,7 +13,6 @@ export class RegisterComponent {
 
   form!:FormGroup
 
-  newUser:Partial<iUser> = {}
 
   constructor(
     private router:Router,
@@ -23,7 +22,7 @@ export class RegisterComponent {
 
   ngOnInit(){
     this.form = this.formsSvc.getForm()
-  }
+    }
 
   submitForm(){
     this.formsSvc.submitForm()

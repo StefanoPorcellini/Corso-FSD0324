@@ -14,10 +14,7 @@ export class FormsService {
 
   userForm!: FormGroup;
 
-  newUser: Partial<iUser> = {
-    email: '',
-    password: '',
-  };
+  newUser: Partial<iUser> = {};
 
   loggedUser: iAuthData = {
     email: '',
@@ -32,6 +29,7 @@ export class FormsService {
 
   getForm(): FormGroup {
     this.form = this.fb.group({
+      username: this.fb.control(null, [Validators.required]),
       nome: this.fb.control(null, [Validators.required]),
       cognome: this.fb.control(null, [Validators.required]),
       email: this.fb.control(null, [Validators.required, Validators.email]),
@@ -49,9 +47,20 @@ export class FormsService {
     return this.userForm;
   }
 
-  createNew(user: iAuthData | Partial<iUser>, formData: FormGroup) {
+  createNew(user: Partial<iUser>, formData: FormGroup) {
     user.email = formData.value.email;
     user.password = formData.value.password;
+    user.username = formData.value.username;
+    user.nome = formData.value.nome;
+    user.cognome = formData.value.cognome;
+  }
+
+  getLoggedUser(form:FormGroup):Partial<iUser>{
+    this.newUser.username = form.value.username
+    this.newUser.nome = form.value.nome
+    this.newUser.cognome = form.value.cognome
+    this.newUser.email = form.value.email
+    return this.newUser
   }
 
   submitForm():void {
@@ -86,9 +95,9 @@ export class FormsService {
   }
 
   login():void{
-    if(this.userForm.invalid){
+    if(this.userForm.invalid || this.userForm.untouched){
       Swal.fire({
-        title: 'Attenzione! Email o Password Errati',
+        title: 'Attenzione! Email o Password Errati o non inseriti',
         text: 'Controlla i dati o registrati se non sei registrato',
         icon: 'warning',
       });

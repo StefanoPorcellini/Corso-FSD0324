@@ -2,9 +2,35 @@
   <div class="container-fluid">
     <img src="../../../assets/img/logo..svg" alt="logo">
     <div class="d-flex gap-3 pe-3">
-      <button class="btn btn-outline-info">Vedi tuo Profilo</button>
+      <button (click)="openFullscreen(content)" class="btn btn-outline-info">Vedi tuo Profilo</button>
       <button class="btn btn-outline-warning">Vedi gli alti utenti</button>
       <button (click)="logout()" class="btn btn-outline-danger">Logout</button>
     </div>
   </div>
 </nav>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h3 class="modal-title">Benvenuto {{ loggedUser.username }}</h3>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <div class="card p-3 shadow">
+      <h4 class="card-title ms-3">Il Tuo Profilo Utente:</h4>
+      <div class="card-body d-flex flex-column flex-md-row">
+        <p class="card-text me-md-5 fs-4">Nome: {{ loggedUser.nome }}</p>
+        <p class="card-text me-md-5 fs-4">Cognome: {{ loggedUser.cognome }}</p>
+        <p class="card-text fs-4">Email: {{ loggedUser.email }}</p>
+      </div>
+    </div>
+    <div class="card p-3 shadow">
+      <h4 class="card-title ms-3">I Tuoi Preferiti:</h4>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>

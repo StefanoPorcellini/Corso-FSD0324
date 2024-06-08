@@ -18,7 +18,7 @@ import { DetailComponent } from './pages/movie/detail/detail.component';
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

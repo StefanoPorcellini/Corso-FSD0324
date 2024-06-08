@@ -5,23 +5,27 @@
       <h2 class="mb-4">Inserisci i dati per registrarti:</h2>
       <form [formGroup]="form">
         <div class="mb-3">
-          <label for="" class="form-label">Nome</label>
+          <label  class="form-label">User Name</label>
+          <input type="text" class="form-control mx-auto" formControlName="username">
+        </div>
+        <div class="mb-3">
+          <label  class="form-label">Nome</label>
           <input type="text" class="form-control mx-auto" formControlName="nome">
         </div>
         <div class="mb-3">
-          <label for="" class="form-label">Cognome</label>
+          <label  class="form-label">Cognome</label>
           <input type="text" class="form-control mx-auto" formControlName="cognome">
         </div>
         <div class="mb-3">
-          <label for="" class="form-label">Email</label>
+          <label  class="form-label">Email</label>
           <input type="email" class="form-control mx-auto" formControlName="email">
         </div>
         <div class="mb-3 ">
-          <label for="" class="form-label">Password</label>
+          <label  class="form-label">Password</label>
           <input type="password" class="form-control mx-auto" formControlName="password">
         </div>
         <div class="mb-3 ">
-          <label for="" class="form-label">Conferma Password</label>
+          <label  class="form-label">Conferma Password</label>
           <input type="password" class="form-control mx-auto" formControlName="confPassword">
         </div>
         <button (click)="submitForm()" type="submit" class="btn btn-success me-5">Registrati</button>

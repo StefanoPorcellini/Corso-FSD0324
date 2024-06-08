@@ -31,6 +31,8 @@ export class AuthService {
 
   register(newUser:Partial<iUser>):Observable<iAuthResponse>{
     return this.http.post<iAuthResponse>(environment.registerSrv, newUser)
+    .pipe(tap((res => console.log(res)
+    )))
   }
 
   login(authData:iAuthData):Observable<iAuthResponse>{

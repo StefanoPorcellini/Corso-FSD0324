@@ -2,7 +2,10 @@
   "users": [
     {
       "email": "pippo.pallino@ciccio.com",
-      "password": "$2a$10$Xar.Nw8XrqL2H8EfeCuL5uNFFGfhfJUMtScPhJkRkQovYKCiWHTyG",
+      "password": "$2a$10$.0ErdrWfUBtndTro1iBAcOAT/5aJPZVVHx7dUVJkJaQxx36eTuppC",
+      "username": "CiccioPippo",
+      "nome": "Pippo",
+      "cognome": "Pallino",
       "id": 1
     }
   ],

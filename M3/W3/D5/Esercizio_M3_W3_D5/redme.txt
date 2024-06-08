@@ -1,3 +1,9 @@
 Per semplificare ho usato sempre la stessa password:
 Pa$$w0rd!
 che è quella che inserisce  Fake Filler
+
+aggiornamento 08 06 2024:
+ho aggiunto la pagina profilo tramite un modale
+(che ieri mi ha fatto perdere un sacco di tempo)
+Putroppo causa impegni non ho avuto tempo di implementare i preferiti,
+ma sicuramente lo completerò
