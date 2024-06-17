@@ -2,9 +2,9 @@
 
 class Animale
 {
-    string? nome;
-    string? genere;
-    string? razza;
+    string nome;
+    string genere;
+    string razza;
 
     public string Nome { get { return nome; } set { nome = value; } }
     public string Genere { get { return genere; } set { genere = value; } }

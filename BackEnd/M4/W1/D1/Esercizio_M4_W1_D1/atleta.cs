@@ -2,9 +2,9 @@
 
 class Atleta
 {
-    string? nome;
-    string? cognome;
-    string? specialita;
+    string nome;
+    string cognome;
+    string specialita;
 
     public string Nome { get { return nome; } set { nome = value; } }
     public string Cognome { get { return cognome; } set { cognome = value; } }
