@@ -12,6 +12,6 @@ class Atleta
 
     public void descrivi()
     {
-        Console.WriteLine("Il mio nome è " + nome + " " + cognome + " e pratico la seguente specialità: " + specialita);
+        return $"Mi chiamo {nome} {cognome} e pratico il seguente sport: {specialita}";
     }
 }

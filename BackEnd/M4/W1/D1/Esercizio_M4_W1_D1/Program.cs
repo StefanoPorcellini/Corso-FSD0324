@@ -13,10 +13,11 @@
         
         Veicolo veicolo = new Veicolo("Automobile", "Corsa", "Opel");
 
-        a.descrivi();
-        animale.descrivi();
-        dipendente.descrivi();
-        veicolo.descrivi();
+        Console.WriteLine( a.descrivi());
+        Console.WriteLine(animale.descrivi());
+        Console.WriteLine(dipendente.descrivi());
+        Console.WriteLine(veicolo.descrivi());
+        Console.ReadLine();
 
     }
 }

@@ -12,6 +12,6 @@ class Dipendente
 
     public void descrivi()
     {
-        Console.WriteLine("Il mio nome è " + nome + " " + cognome + " ed il mio ruolo è: " + ruolo);
+        return $"Mi chiamo {nome} {cognome}, il mio ruolo è {ruolo}";
     }
 }

@@ -14,6 +14,6 @@ class Veicolo
 
     public void descrivi()
     {
-        Console.WriteLine("Sono un veicolo di tipo " + tipo + " il mio nome è " + nome + " e sono prodotto da " + casa);
+        return $"Sono un veicolo di tipo { tipo},  denominato {nome} e sono prodotto da {casa}";
     }
 }

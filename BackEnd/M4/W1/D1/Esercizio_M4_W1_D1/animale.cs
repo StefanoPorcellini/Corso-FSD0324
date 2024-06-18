@@ -12,6 +12,6 @@ class Animale
 
     public void descrivi()
     {
-        Console.WriteLine("Il mio nome è " + nome + ", sono un " + genere + " di razza " + razza);
+        return $"Il mio nome è {nome}, sono un {genere} di razza {razza}";
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\obj\Debug\net8.0\NumberTranslator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\obj\Debug\net8.0\NumberTranslator.AssemblyInfoInputs.cache
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\obj\Debug\net8.0\NumberTranslator.AssemblyInfo.cs
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\obj\Debug\net8.0\NumberTranslator.csproj.CoreCompileInputs.cache
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\obj\Debug\net8.0\NumberTranslator.sourcelink.json
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\bin\Debug\net8.0\NumberTranslator.exe
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\bin\Debug\net8.0\NumberTranslator.deps.json
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\bin\Debug\net8.0\NumberTranslator.runtimeconfig.json
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\bin\Debug\net8.0\NumberTranslator.dll
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\bin\Debug\net8.0\NumberTranslator.pdb
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\obj\Debug\net8.0\NumberTranslator.dll
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\obj\Debug\net8.0\refint\NumberTranslator.dll
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\obj\Debug\net8.0\NumberTranslator.pdb
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\obj\Debug\net8.0\NumberTranslator.genruntimeconfig.cache
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\obj\Debug\net8.0\ref\NumberTranslator.dll
