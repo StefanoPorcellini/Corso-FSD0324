@@ -18,7 +18,6 @@
                 Console.WriteLine("Input non valido. Per favore, inserisci un numero intero.");
             }
 
-            // Attendere l'input dell'utente per chiudere la console
             Console.ReadLine();
 
         }
