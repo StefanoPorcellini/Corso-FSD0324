@@ -1,0 +1,15 @@
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\bin\Debug\net8.0\Esercizio_M4_W1_D4.exe
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\bin\Debug\net8.0\Esercizio_M4_W1_D4.deps.json
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\bin\Debug\net8.0\Esercizio_M4_W1_D4.runtimeconfig.json
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\bin\Debug\net8.0\Esercizio_M4_W1_D4.dll
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\bin\Debug\net8.0\Esercizio_M4_W1_D4.pdb
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\obj\Debug\net8.0\Esercizio_M4_W1_D4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\obj\Debug\net8.0\Esercizio_M4_W1_D4.AssemblyInfoInputs.cache
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\obj\Debug\net8.0\Esercizio_M4_W1_D4.AssemblyInfo.cs
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\obj\Debug\net8.0\Esercizio_M4_W1_D4.csproj.CoreCompileInputs.cache
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\obj\Debug\net8.0\Esercizio_M4_W1_D4.sourcelink.json
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\obj\Debug\net8.0\Esercizio_M4_W1_D4.dll
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\obj\Debug\net8.0\refint\Esercizio_M4_W1_D4.dll
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\obj\Debug\net8.0\Esercizio_M4_W1_D4.pdb
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\obj\Debug\net8.0\Esercizio_M4_W1_D4.genruntimeconfig.cache
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W1\D4\Esercizio_M4_W1_D4\obj\Debug\net8.0\ref\Esercizio_M4_W1_D4.dll

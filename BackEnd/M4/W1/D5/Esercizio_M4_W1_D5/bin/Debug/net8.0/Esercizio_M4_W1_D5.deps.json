@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Esercizio_M4_W1_D5/1.0.0": {
+        "runtime": {
+          "Esercizio_M4_W1_D5.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Esercizio_M4_W1_D5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
