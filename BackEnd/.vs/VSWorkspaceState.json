@@ -1,12 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Cronometro",
     "\\M4",
-    "\\M4\\W1",
-    "\\M4\\W1\\D5",
-    "\\M4\\W1\\D5\\Esercizio_M4_W1_D5"
+    "\\M4\\W2",
+    "\\M4\\W2\\D1",
+    "\\M4\\W2\\D1\\Esercizio_M4_W2_D1_Web_App",
+    "\\M4\\W2\\D1\\Esercizio_M4_W2_D1_Web_App\\Controllers",
+    "\\M4\\W2\\D1\\Esercizio_M4_W2_D1_Web_App\\Models",
+    "\\M4\\W2\\D1\\Esercizio_M4_W2_D1_Web_App\\Views",
+    "\\M4\\W2\\D1\\Esercizio_M4_W2_D1_Web_App\\Views\\Home",
+    "\\M4\\W2\\D1\\Esercizio_M4_W2_D1_Web_App\\Views\\Shared"
   ],
-  "SelectedNode": "\\Cronometro\\Cronometro.csproj",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,16 @@
+﻿@model List<FoodModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Menu</h1>
+    <ol>
+        @foreach (var i in Model)
+            {
+            <li><span>@i.Name</span> € <span>@i.Price</span></li>
+        }
+        
+    </ol>
+</div>
