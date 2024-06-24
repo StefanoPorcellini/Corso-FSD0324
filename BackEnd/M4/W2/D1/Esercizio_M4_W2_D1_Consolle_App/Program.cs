@@ -35,7 +35,7 @@
                 Console.Write("Seleziona un'opzione: ");
 
                 //leggo la scelta e, in base al numero compio le azioni:
-                if (int.TryParse(Console.ReadLine(), out int choice) && choice > 0 && choice < 11)
+                if (int.TryParse(Console.ReadLine(), out int choice) && choice > 0 && choice <= 11)
                 {
                     if (choice == 11)
                     {
@@ -84,6 +84,7 @@
                 Console.WriteLine($"Servizio al tavolo: € {serviceCost}");
                 Console.WriteLine($"Totale: € {total}");
                 Console.WriteLine("========================================");
+                Console.ReadLine(); //devo mettere "ReadLine" altrimenti la console mi si chiude anche se ho disattivato l'opzione...
         }
     }
 }

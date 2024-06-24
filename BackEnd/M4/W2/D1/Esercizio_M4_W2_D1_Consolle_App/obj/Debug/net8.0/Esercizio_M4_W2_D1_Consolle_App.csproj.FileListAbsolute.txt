@@ -1,0 +1,15 @@
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\bin\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.exe
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\bin\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.deps.json
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\bin\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.runtimeconfig.json
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\bin\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.dll
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\bin\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.pdb
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\obj\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\obj\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.AssemblyInfoInputs.cache
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\obj\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.AssemblyInfo.cs
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\obj\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.csproj.CoreCompileInputs.cache
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\obj\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.sourcelink.json
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\obj\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.dll
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\obj\Debug\net8.0\refint\Esercizio_M4_W2_D1_Consolle_App.dll
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\obj\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.pdb
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\obj\Debug\net8.0\Esercizio_M4_W2_D1_Consolle_App.genruntimeconfig.cache
+C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\M4\W2\D1\Esercizio_M4_W2_D1_Consolle_App\obj\Debug\net8.0\ref\Esercizio_M4_W2_D1_Consolle_App.dll
