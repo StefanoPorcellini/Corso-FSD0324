@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NumberTranslator
-build_property.ProjectDir = C:\Users\stefa\Desktop\Epic Code\Nuovo GIT\Corso-FSD0324\BackEnd\NumberTranslator\
+build_property.ProjectDir = C:\Users\stefa\Desktop\Epic Code\Git Hub\BackEnd\NumberTranslator\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

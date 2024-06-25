@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Esercizio_M4_W2_D2": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
